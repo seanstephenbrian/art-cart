@@ -1,6 +1,6 @@
 // dependencies:
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 
 // components:
 import Cart from './Cart';
@@ -19,7 +19,7 @@ export default function App() {
     const [cartHidden, setCartHidden] = useState(true);
     const [inventory, setInventory] = useState([]);
 
-    // on initial load:
+    // on initial render:
     useEffect(() => {
         getInventory();
     }, []);
@@ -34,9 +34,9 @@ export default function App() {
                 }
             })
             .then((data) => data.json())
-            .then((inventory) => {
-                console.log(inventory);
-            })
+            .then((currentInventory) => {
+                setInventory(currentInventory);
+            });
     }
 
     function toggleCart() {
@@ -53,8 +53,8 @@ export default function App() {
                 <Cart hidden={cartHidden} />
                 <Routes>
                     <Route path='/' element={<Home />} />
-                    <Route path='/shop' element={<Shop />} />
-                    <Route path='/shop/:itemId' element={<ItemPage />} />
+                    <Route path='/shop' element={<Shop items={inventory} />} />
+                    <Route path='/shop/:itemId' element={<ItemPage items={inventory} />} />
                 </Routes>
                 <Footer />
             </div>

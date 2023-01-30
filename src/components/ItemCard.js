@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
 export default function ItemCard(props) {
+
     // props:
-    const { itemId } = props;
+    const { itemId, itemDetails } = props;
 
     // render:
     return (
         <div>
-            item {itemId}
-            <Link to={`./${itemId}`}>item link</Link>
+            <Link to={`./${itemId}`}>Item {itemId}: </Link>
+            {itemDetails.title}, {itemDetails.artist}, {itemDetails.year} - ${itemDetails.price} million
         </div>
     )
 }
