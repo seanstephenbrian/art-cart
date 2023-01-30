@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from './Cart';
 import Footer from './Footer';
 import Home from './Home';
+import ItemPage from './ItemPage';
 import NavBar from './NavBar';
 import Shop from './Shop';
 
@@ -33,6 +34,7 @@ export default function App() {
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/shop' element={<Shop />} />
+                    <Route path='/shop/:id' element={<ItemPage />} />
                 </Routes>
                 <Footer />
             </div>
