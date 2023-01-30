@@ -1,0 +1,692 @@
+[
+ {
+   "price": 497.8,
+   "title": "Salvator Mundi",
+   "artist": "Leonardo da Vinci",
+   "year": 1500
+ },
+ {
+   "price": 343,
+   "title": "Interchange",
+   "artist": "Willem de Kooning",
+   "year": 1955
+ },
+ {
+   "price": 301,
+   "title": "The Card Players",
+   "artist": "Paul Cézanne",
+   "year": 1892
+ },
+ {
+   "price": 240,
+   "title": "Nafea Faa Ipoipo\n(When Will You Marry?)",
+   "artist": "Paul Gauguin",
+   "year": 1892
+ },
+ {
+   "price": 229,
+   "title": "Number 17A",
+   "artist": "Jackson Pollock",
+   "year": 1948
+ },
+ {
+   "price": 213.8,
+   "title": "Wasserschlangen II",
+   "artist": "Gustav Klimt",
+   "year": 1907
+ },
+ {
+   "price": 213,
+   "title": "No. 6 (Violet, Green and Red)",
+   "artist": "Mark Rothko",
+   "year": 1951
+ },
+ {
+   "price": 206,
+   "title": "Pendant portraits of Maerten Soolmans and Oopjen Coppit",
+   "artist": "Rembrandt",
+   "year": 1634
+ },
+ {
+   "price": 205,
+   "title": "Les Femmes d'Alger\n(\"Version O\")",
+   "artist": "Pablo Picasso",
+   "year": 1955
+ },
+ {
+   "price": 198,
+   "title": "The Standard Bearer",
+   "artist": "Rembrandt",
+   "year": 1636
+ },
+ {
+   "price": 195,
+   "title": "Shot Sage Blue Marilyn",
+   "artist": "Andy Warhol",
+   "year": 1964
+ },
+ {
+   "price": 194.8,
+   "title": "Nu couché",
+   "artist": "Amedeo Modigliani",
+   "year": 1917
+ },
+ {
+   "price": 188.2,
+   "title": "No. 5, 1948",
+   "artist": "Jackson Pollock",
+   "year": 1948
+ },
+ {
+   "price": 184.8,
+   "title": "Woman III",
+   "artist": "Willem de Kooning",
+   "year": 1953
+ },
+ {
+   "price": 182.4,
+   "title": "Masterpiece",
+   "artist": "Roy Lichtenstein",
+   "year": 1962
+ },
+ {
+   "price": 181.5,
+   "title": "Portrait of Adele Bloch-Bauer I",
+   "artist": "Gustav Klimt",
+   "year": 1907
+ },
+ {
+   "price": 180.3,
+   "title": "Le Rêve",
+   "artist": "Le Rêve",
+   "year": 1932
+ },
+ {
+   "price": 171.1,
+   "title": "Portrait of Dr. Gachet",
+   "artist": "Vincent van Gogh",
+   "year": 1890
+ },
+ {
+   "price": 169.6,
+   "title": "Nu couché (sur le côté gauche)",
+   "artist": "Amedeo Modigliani",
+   "year": 1917
+ },
+ {
+   "price": 169.4,
+   "title": "Portrait of Adele Bloch-Bauer II",
+   "artist": "Gustav Klimt",
+   "year": 1912
+ },
+ {
+   "price": 165.7,
+   "title": "Three Studies of Lucian Freud",
+   "artist": "Francis Bacon",
+   "year": 1969
+ },
+ {
+   "price": 162,
+   "title": "Bal du moulin de la Galette\n[note 8]",
+   "artist": "Pierre-Auguste Renoir",
+   "year": 1876
+ },
+ {
+   "price": 155.7,
+   "title": "Twelve Landscape Screens",
+   "artist": "Qi Baishi",
+   "year": 1925
+ },
+ {
+   "price": 149.4,
+   "title": "Garçon à la pipe",
+   "artist": "Pablo Picasso",
+   "year": 1905
+ },
+ {
+   "price": 149.2,
+   "title": "Les Poseuses, Ensemble (Petite version)",
+   "artist": "Georges Seurat",
+   "year": 1888
+ },
+ {
+   "price": 141.5,
+   "title": "The Scream[note 10]",
+   "artist": "Edvard Munch",
+   "year": 1895
+ },
+ {
+   "price": 139.6,
+   "title": "Otahi",
+   "artist": "Paul Gauguin",
+   "year": 1893
+ },
+ {
+   "price": 139,
+   "title": "Reclining Nude With Blue Cushion",
+   "artist": "Amedeo Modigliani",
+   "year": 1916
+ },
+ {
+   "price": 138,
+   "title": "La Montagne Sainte-Victoire",
+   "artist": "Paul Cezanne",
+   "year": 1888
+ },
+ {
+   "price": 136.7,
+   "title": "Flag[note 12]",
+   "artist": "Jasper Johns",
+   "year": 1958
+ },
+ {
+   "price": 132.3,
+   "title": "Nude, Green Leaves and Bust",
+   "artist": "Pablo Picasso",
+   "year": 1932
+ },
+ {
+   "price": 131.2,
+   "title": "Portrait of Joseph Roulin",
+   "artist": "Vincent van Gogh",
+   "year": 1889
+ },
+ {
+   "price": 128.6,
+   "title": "Irises",
+   "artist": "Vincent van Gogh",
+   "year": 1889
+ },
+ {
+   "price": 128,
+   "title": "Dora Maar au Chat",
+   "artist": "Pablo Picasso",
+   "year": 1941
+ },
+ {
+   "price": 125.9,
+   "title": "Eight Elvises",
+   "artist": "Andy Warhol",
+   "year": 1963
+ },
+ {
+   "price": 124.1,
+   "title": "Young Girl with a Flower Basket",
+   "artist": "Pablo Picasso",
+   "year": 1905
+ },
+ {
+   "price": 123,
+   "title": "Anna's Light",
+   "artist": "Barnett Newman",
+   "year": 1968
+ },
+ {
+   "price": 122.7,
+   "title": "Silver Car Crash (Double Disaster)",
+   "artist": "Andy Warhol",
+   "year": 1963
+ },
+ {
+   "price": 122.2,
+   "title": "Untitled",
+   "artist": "Jean-Michel Basquiat",
+   "year": 1982
+ },
+ {
+   "price": 118.9,
+   "title": "Portrait de l'artiste sans barbe",
+   "artist": "Vincent van Gogh",
+   "year": 1889
+ },
+ {
+   "price": 117.3,
+   "title": "Meules",
+   "artist": "Claude Monet",
+   "year": 1890
+ },
+ {
+   "price": 117.2,
+   "title": "Verger avec cyprès",
+   "artist": "Vincent van Gogh",
+   "year": 1888
+ },
+ {
+   "price": 116,
+   "title": "La Montagne Sainte-Victoire vue du bosquet du Château Noir",
+   "artist": "Paul Cézanne",
+   "year": 1904
+ },
+ {
+   "price": 115.5,
+   "title": "Massacre of the Innocents",
+   "artist": "Peter Paul Rubens",
+   "year": 1611
+ },
+ {
+   "price": 109,
+   "title": "Nurse",
+   "artist": "Roy Lichtenstein",
+   "year": 1964
+ },
+ {
+   "price": 108.6,
+   "title": "Triptych, 1976",
+   "artist": "Francis Bacon",
+   "year": 1976
+ },
+ {
+   "price": 105.7,
+   "title": "Maternitè II",
+   "artist": "Paul Gauguin",
+   "year": 1899
+ },
+ {
+   "price": 104.5,
+   "title": "Birch Forest",
+   "artist": "Gustav Klimt",
+   "year": 1903
+ },
+ {
+   "price": 103.4,
+   "title": "Femme assise près d’une fenêtre (Marie-Thérèse)",
+   "artist": "Pablo Picasso",
+   "year": 1932
+ },
+ {
+   "price": 107.8,
+   "title": "Les Noces de Pierrette",
+   "artist": "Pablo Picasso",
+   "year": 1905
+ },
+ {
+   "price": 107.5,
+   "title": "False Start [de]",
+   "artist": "Jasper Johns",
+   "year": 1959
+ },
+ {
+   "price": 107,
+   "title": "Te Fare",
+   "artist": "Paul Gauguin",
+   "year": 1892
+ },
+ {
+   "price": 106.9,
+   "title": "A Wheatfield with Cypresses",
+   "artist": "Vincent van Gogh",
+   "year": 1889
+ },
+ {
+   "price": 106,
+   "title": "Boy and Dog in a Johnnypump",
+   "artist": "Jean-Michel Basquiat",
+   "year": 1982
+ },
+ {
+   "price": 104.6,
+   "title": "Yo, Picasso",
+   "artist": "Pablo Picasso",
+   "year": 1901
+ },
+ {
+   "price": 104.5,
+   "title": "Turquoise Marilyn",
+   "artist": "Andy Warhol",
+   "year": 1964
+ },
+ {
+   "price": 103.1,
+   "title": "Portrait of Alfonso d'Avalos with a Page",
+   "artist": "Titian",
+   "year": 1533
+ },
+ {
+   "price": 102.5,
+   "title": "Orange, Red, Yellow",
+   "artist": "Mark Rothko",
+   "year": 1961
+ },
+ {
+   "price": 101.4,
+   "title": "Le Bassin aux Nymphéas",
+   "artist": "Claude Monet",
+   "year": 1919
+ },
+ {
+   "price": 99.2,
+   "title": "Chop Suey",
+   "artist": "Edward Hopper",
+   "year": 1929
+ },
+ {
+   "price": 98.4,
+   "title": "Rideau, Cruchon et Compotier",
+   "artist": "Paul Cézanne",
+   "year": 1894
+ },
+ {
+   "price": 97.4,
+   "title": "Portrait of an Artist (Pool with Two Figures)",
+   "artist": "David Hockney",
+   "year": 1972
+ },
+ {
+   "price": 96.3,
+   "title": "Black Fire I",
+   "artist": "Barnett Newman",
+   "year": 1961
+ },
+ {
+   "price": 95.2,
+   "title": "White Center (Yellow, Pink\nand Lavender on Rose)",
+   "artist": "Mark Rothko",
+   "year": 1950
+ },
+ {
+   "price": 94.6,
+   "title": "Vase with Fifteen Sunflowers",
+   "artist": "Vincent van Gogh",
+   "year": 1889
+ },
+ {
+   "price": 94.1,
+   "title": "Buffalo II",
+   "artist": "Robert Rauschenberg",
+   "year": 1964
+ },
+ {
+   "price": 93.8,
+   "title": "Triple Elvis",
+   "artist": "Andy Warhol",
+   "year": 1963
+ },
+ {
+   "price": 93.7,
+   "title": "Green Car Crash\n(Green Burning Car I)",
+   "artist": "Andy Warhol",
+   "year": 1963
+ },
+ {
+   "price": 93.7,
+   "title": "No. 10",
+   "artist": "Mark Rothko",
+   "year": 1958
+ },
+ {
+   "price": 93.1,
+   "title": "In This Case",
+   "artist": "Jean-Michel Basquiat",
+   "year": 1983
+ },
+ {
+   "price": 92.6,
+   "title": "Suprematist Composition",
+   "artist": "Kazimir Malevich",
+   "year": 1916
+ },
+ {
+   "price": 92.5,
+   "title": "Three Studies for a Portrait of John Edwards",
+   "artist": "Francis Bacon",
+   "year": 1984
+ },
+ {
+   "price": 92.2,
+   "title": "Portrait of a Young Man holding a Roundel",
+   "artist": "Sandro Botticelli",
+   "year": 1480
+ },
+ {
+   "price": 92,
+   "title": "Meule",
+   "artist": "Claude Monet",
+   "year": 1891
+ },
+ {
+   "price": 91.4,
+   "title": "Nymphéas en fleur",
+   "artist": "Claude Monet",
+   "year": 1917
+ },
+ {
+   "price": 90,
+   "title": "Darmstadt Madonna",
+   "artist": "Hans Holbein",
+   "year": 1526
+ },
+ {
+   "price": 89.9,
+   "title": "Laboureur dans un champ",
+   "artist": "Vincent van Gogh",
+   "year": 1889
+ },
+ {
+   "price": 89.6,
+   "title": "Triptych Inspired by the Oresteia of Aeschylus",
+   "artist": "Francis Bacon",
+   "year": 1981
+ },
+ {
+   "price": 89.2,
+   "title": "Diana and Actaeon",
+   "artist": "Titian",
+   "year": 1559
+ },
+ {
+   "price": 89,
+   "title": "Au Lapin Agile",
+   "artist": "Pablo Picasso",
+   "year": 1904
+ },
+ {
+   "price": 88.9,
+   "title": "The Gross Clinic",
+   "artist": "Thomas Eakins",
+   "year": 1875
+ },
+ {
+   "price": 88.7,
+   "title": "No 1 (Royal Red and Blue)",
+   "artist": "Mark Rothko",
+   "year": 1954
+ },
+ {
+   "price": 88.3,
+   "title": "Acrobate et jeune arlequin\n[note 23]",
+   "artist": "Pablo Picasso",
+   "year": 1905
+ },
+ {
+   "price": 87.1,
+   "title": "Odalisque couchée aux magnolias",
+   "artist": "Henri Matisse",
+   "year": 1923
+ },
+ {
+   "price": 86.6,
+   "title": "Femme aux Bras Croisés",
+   "artist": "Pablo Picasso",
+   "year": 1902
+ },
+ {
+   "price": 85.7,
+   "title": "Nude Sitting on a Divan",
+   "artist": "Amedeo Modigliani",
+   "year": 1917
+ },
+ {
+   "price": 85.4,
+   "title": "Police Gazette[132]",
+   "artist": "Willem de Kooning",
+   "year": 1955
+ },
+ {
+   "price": 85,
+   "title": "Untitled",
+   "artist": "Jean-Michel Basquiat",
+   "year": 1982
+ },
+ {
+   "price": 84.6,
+   "title": "Diana and Callisto",
+   "artist": "Titian",
+   "year": 1559
+ },
+ {
+   "price": 82.5,
+   "title": "No. 7",
+   "artist": "Mark Rothko",
+   "year": 1951
+ },
+ {
+   "price": 80.6,
+   "title": "Untitled (New York City)",
+   "artist": "Cy Twombly",
+   "year": 1968
+ },
+ {
+   "price": 80.6,
+   "title": "Ten Views Of Lingbi Rock [zh][137]",
+   "artist": "Wu Bin",
+   "year": 1610
+ },
+ {
+   "price": 80.5,
+   "title": "Femme assise dans un jardin",
+   "artist": "Pablo Picasso",
+   "year": 1938
+ },
+ {
+   "price": 80.3,
+   "title": "Portrait of George Dyer Talking",
+   "artist": "Francis Bacon",
+   "year": 1966
+ },
+ {
+   "price": 80.2,
+   "title": "Peasant Woman Against a Background of Wheat",
+   "artist": "Vincent van Gogh",
+   "year": 1890
+ },
+ {
+   "price": 79.7,
+   "title": "Untitled [de]",
+   "artist": "Cy Twombly",
+   "year": 1970
+ },
+ {
+   "price": 79.7,
+   "title": "Four Marlons",
+   "artist": "Andy Warhol",
+   "year": 1966
+ },
+ {
+   "price": 79.5,
+   "title": "The Empire of Lights",
+   "artist": "René Magritte",
+   "year": 1961
+ },
+ {
+   "price": 78.9,
+   "title": "Eagle Standing on Pine Tree[147]",
+   "artist": "Qi Baishi",
+   "year": 1946
+ },
+ {
+   "price": 78.7,
+   "title": "Men in Her Life",
+   "artist": "Andy Warhol",
+   "year": 1962
+ },
+ {
+   "price": 77.5,
+   "title": "Contraste de formes",
+   "artist": "Fernand Léger",
+   "year": 1913
+ },
+ {
+   "price": 77.1,
+   "title": "La Gommeuse",
+   "artist": "Pablo Picasso",
+   "year": 1901
+ },
+ {
+   "price": 77,
+   "title": "Buste de femme\n(Femme à la résille)",
+   "artist": "Pablo Picasso",
+   "year": 1938
+ },
+ {
+   "price": 76.9,
+   "title": "Portrait of a Halberdier",
+   "artist": "Pontormo",
+   "year": 1537
+ },
+ {
+   "price": 75.8,
+   "title": "L’Allée des Alyscamps",
+   "artist": "Vincent van Gogh",
+   "year": 1888
+ },
+ {
+   "price": 75.8,
+   "title": "Untitled",
+   "artist": "Mark Rothko",
+   "year": 1952
+ },
+ {
+   "price": 74.9,
+   "title": "Untitled XXV",
+   "artist": "Willem de Kooning",
+   "year": 1977
+ },
+ {
+   "price": 74.8,
+   "title": "Zhichuan Resettlement[157]",
+   "artist": "Wang Meng",
+   "year": 1350
+ },
+ {
+   "price": 74.7,
+   "title": "Femme au béret et à la robe quadrillée (Marie-Thérèse Walter)",
+   "artist": "Pablo Picasso",
+   "year": 1937
+ },
+ {
+   "price": 74.5,
+   "title": "Spring",
+   "artist": "Édouard Manet",
+   "year": 1881
+ },
+ {
+   "price": 74.4,
+   "title": "Woman as Landscape",
+   "artist": "Willem de Kooning",
+   "year": 1955
+ },
+ {
+   "price": 74.3,
+   "title": "1949-A-No. 1 [de]",
+   "artist": "Clyfford Still",
+   "year": 1949
+ },
+ {
+   "price": 71.4,
+   "title": "Cabanes de bois parmi les oliviers et cyprès",
+   "artist": "Vincent van Gogh",
+   "year": 1889
+ },
+ {
+   "price": 70.4,
+   "title": "Le Bassin Aux Nymphéas (1917-19)",
+   "artist": "Claude Monet",
+   "year": 1919
+ },
+ {
+   "price": 70.4,
+   "title": "Juin-Octobre 1985",
+   "artist": "Zao Wou-Ki",
+   "year": 1985
+ }
+]
