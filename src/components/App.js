@@ -1,5 +1,5 @@
 // dependencies:
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // components:
@@ -13,11 +13,15 @@ import Shop from './Shop';
 import '../styles/app.scss';
 
 export default function App() {
+    
+    // state:
+    const [cartHidden, setCartHidden] = useState(true);
+
     return (
         <BrowserRouter>
             <div className='page-wrapper'>
                 <NavBar />
-                <Cart />
+                <Cart hidden={cartHidden} />
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/shop' element={<Shop />} />

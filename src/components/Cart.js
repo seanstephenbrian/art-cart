@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-export default function Cart() {
+export default function Cart(props) {
 
-    // state:
-    const [hidden, setHidden] = useState(true);
+    // props:
+    const { hidden } = props;
 
     if (hidden) {
         return;
