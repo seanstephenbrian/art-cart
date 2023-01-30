@@ -17,8 +17,28 @@ export default function App() {
     
     // state:
     const [cartHidden, setCartHidden] = useState(true);
+    const [inventory, setInventory] = useState([]);
+
+    // on initial load:
+    useEffect(() => {
+        getInventory();
+    }, []);
 
     // methods:
+    async function getInventory() {
+        fetch('art-data.json',
+            {
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            })
+            .then((data) => data.json())
+            .then((inventory) => {
+                console.log(inventory);
+            })
+    }
+
     function toggleCart() {
         setCartHidden((cartStatus) => {
             return !cartStatus;
