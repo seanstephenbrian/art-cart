@@ -34,7 +34,7 @@ export default function App() {
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/shop' element={<Shop />} />
-                    <Route path='/shop/:id' element={<ItemPage />} />
+                    <Route path='/shop/:itemId' element={<ItemPage />} />
                 </Routes>
                 <Footer />
             </div>

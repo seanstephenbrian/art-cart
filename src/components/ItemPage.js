@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Route, NavLink, Redirect } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-export default function ItemPage({ match }) {
+export default function ItemPage() {
 
-    useEffect(() => {
-        console.log(match);
-    }, []);
+    const { itemId } = useParams();
 
     return (
         <div>
-            item page
+            {itemId}
         </div>
     )
 }
