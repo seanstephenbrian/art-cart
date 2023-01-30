@@ -17,10 +17,18 @@ export default function App() {
     // state:
     const [cartHidden, setCartHidden] = useState(true);
 
+    // methods:
+    function toggleCart() {
+        setCartHidden((cartStatus) => {
+            return !cartStatus;
+        });
+    }
+
+    // render:
     return (
         <BrowserRouter>
             <div className='page-wrapper'>
-                <NavBar />
+                <NavBar handleCartClick={toggleCart} />
                 <Cart hidden={cartHidden} />
                 <Routes>
                     <Route path='/' element={<Home />} />
