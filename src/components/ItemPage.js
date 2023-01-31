@@ -30,7 +30,7 @@ export default function ItemPage(props) {
 
     return (
         <div>
-            {itemDetails.title}, {itemDetails.artist}, {itemDetails.year}, ${itemDetails.price}
+            {itemDetails.title}, {itemDetails.artist}, {itemDetails.year}, ${itemDetails.price} million
         </div>
     )
 }

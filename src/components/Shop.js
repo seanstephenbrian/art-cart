@@ -1,11 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import uniqid from 'uniqid';
 
 import ItemCard from './ItemCard';
 
 export default function Shop(props) {
-    // props:
-    const { items } = props;
+    // state:
+    const [items, setItems] = useState([]);
+
+    // on initial render:
+    useEffect(() => {
+        getItems();
+    }, []);
+
+    // methods:
+    async function getItems() {
+        fetch('../art-data.json',
+            {
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            })
+            .then((data) => data.json())
+            .then((currentInventory) => {
+                setItems(currentInventory);
+            });
+    }
 
     return (
         <div className='shop-page'>
