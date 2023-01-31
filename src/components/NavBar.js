@@ -11,9 +11,9 @@ export default function NavBar(props) {
     // render:
     return (
         <div className='nav-bar'>
-            <NavItem linkPath='' navText='Home'/>
-            <NavItem linkPath='shop' navText='Shop'/>
-            <div className='cart-link' onClick={handleCartClick}>
+            <NavItem className='nav-item' linkPath='' navText='Home'/>
+            <NavItem className='nav-item' linkPath='shop' navText='Shop'/>
+            <div className='nav-item cart-link' onClick={handleCartClick}>
                 Cart
             </div>
         </div>
