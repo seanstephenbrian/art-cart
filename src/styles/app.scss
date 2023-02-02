@@ -1,6 +1,7 @@
 // global variables/imports:
 :root {
     --rvv: calc(1rem + 1vmin + 1vmax);
+    --nav-text: calc(0.5*var(--rvv));
 }
 
 @font-face {
@@ -27,6 +28,10 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+
+a {
+    text-decoration: none;
 }
 
 html {

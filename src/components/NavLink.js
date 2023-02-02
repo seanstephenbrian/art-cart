@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import '../styles/nav-item.scss';
+import '../styles/nav-link.scss';
 
 export default function NavItem(props) {
     // props:

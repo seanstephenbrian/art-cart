@@ -1,13 +1,15 @@
 import React from 'react';
 
+import '../styles/title.scss';
+
 export default function Title() {
     return (
         <div className='title-section'>
             <div className='title-text'>
-                art cart
+                ArtCart
             </div>
             <div className='subtitle-text'>
-                shop for the world's most expensive art
+                Own the World's Most Expensive Art
             </div>
         </div>
     )
