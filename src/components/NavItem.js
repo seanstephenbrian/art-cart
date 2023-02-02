@@ -10,8 +10,11 @@ export default function NavItem(props) {
 
     // render:
     return (
-        <Link className='nav-link' to={`/${linkPath}`}>
-            {navText}
-        </Link>
+        <div className='nav-link shop-link'>
+            <Link to={`/${linkPath}`}>
+                <span className='link-text'>{navText}</span>
+            </Link>
+        </div>
+        
     )
 }

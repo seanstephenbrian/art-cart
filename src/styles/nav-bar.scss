@@ -1,10 +1,48 @@
-.nav-bar {
-    height: 75px;
-    width: 100%;
-    display: flex;
-    border-bottom: 1px solid #000000;
+// NAV LAYOUT:
 
-    .nav-item {
-        cursor: pointer;
+.nav-bar {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "title shop cart";
+
+    .title-section {
+        grid-area: title;
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .shop-link {
+        grid-area: shop;
+    }
+
+    .cart-link {
+        grid-area: cart;
+        margin-right: 10px;
+    }
+}
+
+
+// desktop styles:
+@media screen and (min-width: 600px) {
+    .nav-bar {
+        grid-template-columns: 1fr 400px 1fr;
+        grid-template-areas: "shop title cart";
+    }
+
+    .title-section {
+        text-align: center;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    .cart-link-text {
+        margin-right: auto;
     }
 }
