@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-export default function ItemPage(props) {
-    // state:
-    const [itemDetails, setItemDetails] = useState({})
-
+export default function ItemPage() {
+    
     // props:
     const { itemId } = useParams();
+
+    // state:
+    const [itemDetails, setItemDetails] = useState({})
 
     // on initial render:
     useEffect(() => {
@@ -23,8 +24,8 @@ export default function ItemPage(props) {
                 }
             })
             .then((data) => data.json())
-            .then((currentInventory) => {
-                setItemDetails(currentInventory[itemId]);
+            .then((currentItems) => {
+                setItemDetails(currentItems[itemId]);
             });
     }
 

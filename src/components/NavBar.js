@@ -5,6 +5,7 @@ import NavItem from './NavItem';
 import '../styles/nav-bar.scss';
 
 export default function NavBar(props) {
+    
     // props:
     const { handleCartClick } = props;
 
