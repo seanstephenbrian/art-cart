@@ -17,7 +17,6 @@ export default function Cart(props) {
                 artist: 'test artist',
                 year: 'test year',
                 price: 100000000,
-                quantity: 1
             },
             {
                 id: 30,
@@ -25,7 +24,6 @@ export default function Cart(props) {
                 artist: 'test artist 2',
                 year: 'test year 2',
                 price: 50000000,
-                quantity: 1
             }
     ]);
 
@@ -49,7 +47,7 @@ export default function Cart(props) {
         const total = cartItems.reduce((accumulator, currentItem) => accumulator + currentItem.price, 0);
         setCartTotal(total);
         // update shipping:
-        if (total > 100000000) {
+        if (total >= 100000000) {
             setCartShipping(0);
         } else {
             setCartShipping(50000);
@@ -58,7 +56,7 @@ export default function Cart(props) {
         setCartTax(total * 0.08875);
         // and save cart to local storage:
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    }, [cartItems]);
+    });
 
     // render conditions:
     if (hidden) {
@@ -77,18 +75,21 @@ export default function Cart(props) {
                         <img className='close-icon svg-filter' src={CloseIcon} alt='Close Cart' />
                     </div>
                 </div>
+                <div className='shipping-notice'>
+                    Free shipping on orders over $100,000,000!
+                </div>
                 <div className='cart-items'>
                     {cartItems.map((item) => {
                         return (
                             <div className='cart-item' key={item.id}>
                                 <div className='cart-item-heading'>
-                                    {item.quantity}x - {item.title}
+                                    {item.title}
                                 </div>
                                 <div className='cart-item-details'>
                                     {item.artist}, {item.year}
                                 </div>
                                 <div className='cart-item-price'>
-                                    ${item.quantity * item.price}
+                                    ${item.price.toLocaleString('en-US')}
                                 </div>
                             </div>
                         )
@@ -99,25 +100,25 @@ export default function Cart(props) {
                         Subtotal:
                     </div>
                     <div className='amount subtotal-amount'>
-                        ${cartTotal}
+                        ${cartTotal.toLocaleString('en-US')}
                     </div>
                     <div className='label tax-label'>
                         Tax:
                     </div>
                     <div className='amount tax-amount'>
-                        ${cartTax}
+                        ${cartTax.toLocaleString('en-US')}
                     </div>
                     <div className='label shipping-label'>
                         Shipping:
                     </div>
                     <div className='amount shipping-amount'>
-                        ${cartShipping}
+                        ${cartShipping.toLocaleString('en-US')}
                     </div>
                     <div className='label final-total-label'>
                         Total:
                     </div>
                     <div className='amount final-total-amount'>
-                        ${cartTotal + cartTax + cartShipping}
+                        ${(cartTotal + cartTax + cartShipping).toLocaleString('en-US')}
                     </div>
                 </div>
                 
