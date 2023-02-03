@@ -4,7 +4,12 @@
 // global variables/imports:
 :root {
     --rvv: calc(1rem + 1vmin + 1vmax);
-    --nav-text: calc(0.5*var(--rvv));
+    --nav-button-font-size: calc(0.6*var(--rvv));
+
+    // colors:
+    --nav-bg: #ffdf9fa9;
+    --nav-button-bg: #8fb3cc74;
+    --nav-text: #123852;
 }
 
 @font-face {

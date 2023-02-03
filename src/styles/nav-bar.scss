@@ -4,7 +4,8 @@
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas: "title shop cart";
     padding-bottom: 15px;
-    border-bottom: 1px solid black;    
+    border-bottom: 1px solid black;
+    background-color: var(--nav-bg);
 
     .title-section {
         grid-area: title;
@@ -13,10 +14,18 @@
         
         .title-text {
             font-size: calc(1.7*var(--rvv));
+
+            a {
+                color: var(--nav-text);
+            }
+            a:visited {
+                color: var(--nav-text);
+            }
         }
         
         .subtitle-text {
             font-size: calc(0.9*var(--nav-text));
+            color: var(--nav-text);
         }
     }
 
@@ -26,14 +35,28 @@
         align-items: flex-end;
 
         .link-text {
-            color: black;
             text-decoration: none;
-            border: 1px solid black;
+            border: 1px solid var(--nav-text);
+            border-radius: 5px;
             cursor: pointer;
             font-family: 'Leluja';
-            font-size: var(--nav-text);
+            font-size: var(--nav-button-font-size);
             margin-top: auto;
             padding: 2px;
+            background-color: var(--nav-button-bg);
+            color: var(--nav-text);
+            transition: transform 0.1s ease-in-out;
+
+            a {
+                color: var(--nav-text);
+            }
+            a:visited {
+                color: var(--nav-text);
+            }
+        }
+
+        .link-text:hover {
+            transform: scale(1.1);
         }
     }
     
