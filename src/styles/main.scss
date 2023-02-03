@@ -9,6 +9,7 @@
     // colors:
     --nav-bg: #ffdf9fa9;
     --nav-button-bg: #8fb3cc74;
+    --nav-button-height: calc(var(--rvv));
     --nav-text: #123852;
 }
 
@@ -45,6 +46,10 @@ a {
 
 a:visited {
     color: black;
+}
+
+.svg-filter {
+    filter: invert(18%) sepia(11%) saturate(3956%) hue-rotate(164deg) brightness(92%) contrast(92%);
 }
 
 html {

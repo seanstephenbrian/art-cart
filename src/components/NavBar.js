@@ -18,8 +18,11 @@ export default function NavBar(props) {
                 <span className='link-text shop-link-text'><Link to='/shop'>Shop</Link></span>
             </div>
             <div className='nav-link cart-link' onClick={handleCartClick}>
-                <span className='link-text cart-link-text'>Cart</span>
-                <img className='cart-icon' src={CartIcon} alt='Your Cart' />
+                <span className='link-text cart-link-text'>
+                    Cart
+                    <img className='cart-icon svg-filter' src={CartIcon} alt='Your Cart' />
+                </span>
+                
             </div>
         </div>
     )
