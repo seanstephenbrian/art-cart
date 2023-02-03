@@ -11,7 +11,7 @@ import NavBar from './NavBar';
 import Shop from './Shop';
 
 // styles:
-import '../styles/app.scss';
+import '../styles/main.scss';
 
 export default function App() {
     

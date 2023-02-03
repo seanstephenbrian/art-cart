@@ -1,9 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import NavLink from './NavLink';
 import Title from './Title';
-
-import '../styles/nav-bar.scss';
 
 export default function NavBar(props) {
 
@@ -14,7 +12,9 @@ export default function NavBar(props) {
     return (
         <div className='nav-bar'>
             <Title />
-            <NavLink linkPath='shop' navText='Shop'/>
+            <div className='nav-link shop-link' onClick={handleCartClick}>
+                <span className='link-text shop-link-text'><Link to='/shop'>Shop</Link></span>
+            </div>
             <div className='nav-link cart-link' onClick={handleCartClick}>
                 <span className='link-text cart-link-text'>Cart</span>
             </div>
