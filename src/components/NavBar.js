@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import Title from './Title';
 
+import CartIcon from '../img/cart.svg';
+
 export default function NavBar(props) {
 
     // props:
@@ -17,6 +19,7 @@ export default function NavBar(props) {
             </div>
             <div className='nav-link cart-link' onClick={handleCartClick}>
                 <span className='link-text cart-link-text'>Cart</span>
+                <img className='cart-icon' src={CartIcon} alt='Your Cart' />
             </div>
         </div>
     )

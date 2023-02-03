@@ -67,6 +67,13 @@
     .cart-link {
         grid-area: cart;
         margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+
+        .cart-icon {
+            height: 30px;
+        }
     }
 }
 
@@ -87,10 +94,10 @@
         }
 
         .nav-link {
-            justify-content: flex-end;
+            justify-content: flex-start;
 
-            .cart-link-text {
-                margin-right: auto;
+            .shop-link-text {
+                margin-left: auto;
             }
         }
     }
