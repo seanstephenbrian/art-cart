@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react';
 
+import CloseIcon from '../img/close.svg';
+
 export default function Cart(props) {
 
     // props:
-    const { hidden } = props;
+    const { 
+        handleCloseClick,
+        hidden } = props;
 
     // state:
     const [cartItems, setCartItems] = useState([
@@ -11,17 +15,25 @@ export default function Cart(props) {
                 id: 1,
                 title: 'test title',
                 artist: 'test artist',
-                price: 100000000
+                year: 'test year',
+                price: 100000000,
+                quantity: 1
             },
             {
                 id: 30,
                 title: 'test title 2',
                 artist: 'test artist 2',
-                price: 50000000
+                year: 'test year 2',
+                price: 50000000,
+                quantity: 1
             }
     ]);
 
     const [cartTotal, setCartTotal] = useState(0);
+
+    const [cartShipping, setCartShipping] = useState(0);
+
+    const [cartTax, setCartTax] = useState(0);
 
     // HOOKS:
     // on initial render, check for existing cart in localStorage:
@@ -36,6 +48,14 @@ export default function Cart(props) {
         // update cartTotal:
         const total = cartItems.reduce((accumulator, currentItem) => accumulator + currentItem.price, 0);
         setCartTotal(total);
+        // update shipping:
+        if (total > 100000000) {
+            setCartShipping(0);
+        } else {
+            setCartShipping(50000);
+        }
+        // update tax:
+        setCartTax(total * 0.08875);
         // and save cart to local storage:
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
     }, [cartItems]);
@@ -46,22 +66,59 @@ export default function Cart(props) {
     } else if (!hidden) {
         return (
             <div className='cart'>
-                <div className='cart-title'>
-                    Your ArtCart:
+                <div className='cart-heading'>
+                    <div className='cart-title'>
+                        Your ArtCart
+                    </div>
+                    <div className='item-count'>
+                        {cartItems.length}
+                    </div>
+                    <div className='close-cart' onClick={handleCloseClick}>
+                        <img className='close-icon svg-filter' src={CloseIcon} alt='Close Cart' />
+                    </div>
                 </div>
                 <div className='cart-items'>
                     {cartItems.map((item) => {
                         return (
                             <div className='cart-item' key={item.id}>
+                                <div className='cart-item-heading'>
+                                    {item.quantity}x - {item.title}
+                                </div>
                                 <div className='cart-item-details'>
-                                    {item.title}, {item.artist}, ${item.price}
+                                    {item.artist}, {item.year}
+                                </div>
+                                <div className='cart-item-price'>
+                                    ${item.quantity * item.price}
                                 </div>
                             </div>
                         )
                     })}
                 </div>
                 <div className='cart-total'>
-                    Total: ${cartTotal}
+                    <div className='label subtotal-label'>
+                        Subtotal:
+                    </div>
+                    <div className='amount subtotal-amount'>
+                        ${cartTotal}
+                    </div>
+                    <div className='label tax-label'>
+                        Tax:
+                    </div>
+                    <div className='amount tax-amount'>
+                        ${cartTax}
+                    </div>
+                    <div className='label shipping-label'>
+                        Shipping:
+                    </div>
+                    <div className='amount shipping-amount'>
+                        ${cartShipping}
+                    </div>
+                    <div className='label final-total-label'>
+                        Total:
+                    </div>
+                    <div className='amount final-total-amount'>
+                        ${cartTotal + cartTax + cartShipping}
+                    </div>
                 </div>
                 
             </div>

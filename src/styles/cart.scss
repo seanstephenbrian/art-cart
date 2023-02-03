@@ -4,4 +4,134 @@
     height: 100vh;
     width: 100vw;
     background-color: var(--cart-bg);
+    color: var(--cart-text);
+
+    .cart-heading {
+        width: 80%;
+        padding: calc(var(--rvv));
+        display: flex;
+        align-items: center;
+        gap: calc(0.4*var(--rvv));
+
+        .cart-title {
+            font-size: calc(var(--rvv));
+        }
+
+        .item-count {
+            font-size: calc(0.7*var(--rvv));
+            width: 15px;
+            height: 15px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid var(--cart-text);
+            border-radius: 5px;
+            background-color: var(--nav-button-bg);
+        }
+
+        .close-cart {
+            cursor: pointer;
+            margin-left: auto;
+            border: 2px solid var(--cart-text);
+            border-radius: 5px;
+            background-color: var(--nav-button-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            height: 100%;
+            padding: 5px;
+            font-size: calc(0.7*var(--rvv));
+            transition: transform 0.1s ease-in-out;
+
+            img {
+                height: var(--nav-button-height);
+            }
+        }
+
+        .close-cart:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .cart-items {
+        padding: 0 calc(var(--rvv));
+        margin-bottom: calc(var(--rvv));
+
+        .cart-item {
+            display: grid;
+            margin-bottom: calc(var(--rvv));
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "cart-item-heading cart-item-price"
+                "cart-item-details cart-item-price";
+
+            .cart-item-heading {
+                grid-area: cart-item-heading;
+            }
+
+            .cart-item-details {
+                grid-area: cart-item-details;
+            }
+
+            .cart-item-price {
+                grid-area: cart-item-price;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .cart-total {
+        padding: 0 calc(var(--rvv));
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-column-gap: calc(var(--rvv));
+        grid-template-areas:
+            "subtotal-label subtotal-amount"
+            "tax-label tax-amount"
+            "shipping-label shipping-amount"
+            "final-total-label final-total-amount";
+            
+        .subtotal-label {
+            grid-area: subtotal-label;
+        }
+    
+        .subtotal-amount {
+            grid-area: subtotal-amount;
+        }
+    
+        .tax-label {
+            grid-area: tax-label;
+        }
+    
+        .tax-amount {
+            grid-area: tax-amount;
+        }
+    
+        .shipping-label {
+            grid-area: shipping-label;
+        }
+    
+        .shipping-amount {
+            grid-area: shipping-amount;
+        }
+    
+        .final-total-label {
+            grid-area: final-total-label;
+        }
+    
+        .final-total-amount {
+            grid-area: final-total-amount;
+        }
+    
+        .final-total-label,
+        .final-total-amount {
+            margin-top: calc(0.8*var(--rvv));
+        }
+    }
+
+    
 }

@@ -30,7 +30,7 @@ export default function App() {
         <BrowserRouter>
             <div className='page-wrapper'>
                 <NavBar handleCartClick={toggleCart} />
-                <Cart hidden={cartHidden} />
+                <Cart handleCloseClick={toggleCart} hidden={cartHidden} />
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/shop' element={<Shop />} />
