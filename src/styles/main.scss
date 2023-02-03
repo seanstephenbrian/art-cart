@@ -1,5 +1,6 @@
 // section-specific styling:
 @use '../styles/nav-bar.scss';
+@use '../styles/cart.scss';
 
 // global variables/imports:
 :root {
@@ -11,6 +12,7 @@
     --subtitle-font-size: calc(0.65*var(--rvv));
 
     // colors:
+    --cart-bg: #ffdf9f;
     --nav-bg: #ffdf9fa9;
     --nav-button-bg: #8fb3cc74;
     --nav-text: #123852;

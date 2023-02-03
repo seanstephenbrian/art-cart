@@ -4,7 +4,7 @@
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas: "title shop cart";
     padding-bottom: 15px;
-    border-bottom: 1px solid black;
+    border-bottom: 2.5px solid var(--nav-text);
     background-color: var(--nav-bg);
 
     .title-section {
@@ -37,7 +37,7 @@
         .link-text {
             height: var(--nav-button-height);
             text-decoration: none;
-            border: 1px solid var(--nav-text);
+            border: 2.5px solid var(--nav-text);
             border-radius: 5px;
             cursor: pointer;
             font-family: 'Leluja';
