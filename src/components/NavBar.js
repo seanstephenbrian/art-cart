@@ -15,7 +15,7 @@ export default function NavBar(props) {
         <div className='nav-bar'>
             <Title />
             <div className='nav-link shop-link' onClick={handleCartClick}>
-                <span className='link-text shop-link-text'><Link to='/shop'>Shop</Link></span>
+                <span className='link-text shop-link-text'><Link to='/shop'>Shop Art</Link></span>
             </div>
             <div className='nav-link cart-link' onClick={handleCartClick}>
                 <span className='link-text cart-link-text'>

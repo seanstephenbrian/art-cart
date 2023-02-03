@@ -4,12 +4,15 @@
 // global variables/imports:
 :root {
     --rvv: calc(1rem + 1vmin + 1vmax);
+
+    // sizes:
     --nav-button-font-size: calc(0.6*var(--rvv));
+    --nav-button-height: calc(var(--rvv));
+    --subtitle-font-size: calc(0.65*var(--rvv));
 
     // colors:
     --nav-bg: #ffdf9fa9;
     --nav-button-bg: #8fb3cc74;
-    --nav-button-height: calc(var(--rvv));
     --nav-text: #123852;
 }
 
