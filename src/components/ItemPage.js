@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
+import '../styles/item-page.scss';
+
 export default function ItemPage() {
     
     // props:

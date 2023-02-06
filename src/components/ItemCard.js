@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -6,8 +6,8 @@ export default function ItemCard(props) {
 
     // props:
     const {
+        cartItems,
         handleAddClick,
-        inCart, 
         itemId, 
         itemDetails } = props;    
 
@@ -19,18 +19,20 @@ export default function ItemCard(props) {
 
     // render conditions:
     let addButton;
-    if (!inCart) {
+    // render 'Added' button if the item is already in the cart:
+    if (cartItems.some(cartItem => cartItem.title === itemDetails.title)) {
+        addButton =
+            <div className='card-button added-to-cart'>
+                Added ✓
+            </div>;
+    // otherwise render 'Add to Cart' button:
+    } else {
         addButton = 
             <div 
                 className='card-button add-to-cart' 
                 onClick={() => handleAddClick(itemDetails)}
             >
                 Add to Cart
-            </div>;
-    } else {
-        addButton =
-            <div className='card-button added-to-cart'>
-                Added ✓
             </div>;
     }
 

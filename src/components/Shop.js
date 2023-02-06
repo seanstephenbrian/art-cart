@@ -13,7 +13,6 @@ export default function Shop(props) {
     // state
     const [items, setItems] = useState([]);
 
-    // on initial render:
     useEffect(() => {
         getItems();
     }, []);
@@ -35,14 +34,10 @@ export default function Shop(props) {
     return (
         <div className='shop-page'>
             {items.map((item, index) => {
-                let inCart = false;
-                if (cartItems.includes(item)) {
-                    inCart = true;
-                }
                 return (
                     <ItemCard
+                        cartItems={cartItems}
                         handleAddClick={() => addToCart(item)}
-                        inCart={inCart}
                         itemDetails={item}
                         itemId={index}
                         key={uniqid()} 

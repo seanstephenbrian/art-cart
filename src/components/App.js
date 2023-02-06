@@ -21,8 +21,10 @@ export default function App() {
 
     // methods:
     function updateCart(item) {
-        // check for item in cart:
-        if (cartItems.includes(item)) return;
+        // if item is already in cart, don't let user add it:
+        if (cartItems.some(cartItem => cartItem.title === item.title)) {
+            return;
+        }
         // if item's not there, add it to cart:
         setCartItems([...cartItems, item]);
     }

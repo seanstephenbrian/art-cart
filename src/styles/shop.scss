@@ -76,6 +76,8 @@
 
         .added-to-cart {
             background-color: var(--added-bg);
+            border: 1px solid var(--added-text);
+            outline: 2px solid var(--added-bg);
             color: var(--added-text);
         }
     }
