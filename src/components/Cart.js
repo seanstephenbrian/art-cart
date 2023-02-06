@@ -12,11 +12,9 @@ export default function Cart(props) {
         hidden } = props;
 
     // state:
-    const [cartTotal, setCartTotal] = useState(0);
-
     const [cartShipping, setCartShipping] = useState(0);
-
     const [cartTax, setCartTax] = useState(0);
+    const [cartTotal, setCartTotal] = useState(0);
 
     // HOOKS:
     // whenever cartItems changes...
@@ -25,15 +23,13 @@ export default function Cart(props) {
         const total = cartItems.reduce((accumulator, currentItem) => accumulator + (currentItem.price * 1000000), 0);
         setCartTotal(total);
         // update shipping:
-        if (total >= 100000000 || cartItems.length === 0) {
+        if (total >= 200000000 || cartItems.length === 0) {
             setCartShipping(0);
         } else {
-            setCartShipping(50000);
+            setCartShipping(50000 * cartItems.length);
         }
         // update tax:
-        setCartTax(total * 0.08875);
-        // and save cart to local storage:
-        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        setCartTax(total * 0.08875);        
     }, [cartItems]);
 
     // render conditions:
@@ -54,7 +50,7 @@ export default function Cart(props) {
                     </div>
                 </div>
                 <div className='shipping-notice'>
-                    Free shipping on orders over $100,000,000!
+                    Free shipping on orders over $200,000,000!
                 </div>
                 <div className='cart-items'>
                     {cartItems.map((item) => {

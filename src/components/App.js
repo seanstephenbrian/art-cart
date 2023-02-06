@@ -17,15 +17,7 @@ export default function App() {
     
     // state:
     const [cartHidden, setCartHidden] = useState(true);
-    const [currentItemCount, setCurrentItemCount] = useState(0);
     const [cartItems, setCartItems] = useState([]);
-
-    // on initial render, check for existing cart in localStorage:
-    useEffect(() => {
-        if (localStorage.getItem('cartItems')) {
-            setCartItems(JSON.parse(localStorage.getItem('cartItems')));
-        }
-    }, []);
 
     // methods:
     function updateCart(item) {
