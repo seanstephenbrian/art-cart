@@ -53,7 +53,6 @@
         }
 
         .card-button {
-            cursor: pointer;
             font-size: calc(0.6*var(--rvv));
             display: flex;
             justify-content: center;
@@ -69,6 +68,15 @@
             a:visited {
                 color: var(--item-text);
             }
+        }
+
+        .add-to-cart {
+            cursor: pointer;
+        }
+
+        .added-to-cart {
+            background-color: var(--added-bg);
+            color: var(--added-text);
         }
     }
 }
@@ -86,11 +94,13 @@
                 height: 15vh;
             }
 
-            .card-button {
+            .add-to-cart,
+            .view-details {
                 transition: transform 0.1s ease-in-out;
             }
 
-            .card-button:hover {
+            .add-to-cart:hover,
+            .view-details:hover {
                 transform: scale(1.05);
             }
         }

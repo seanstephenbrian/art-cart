@@ -8,7 +8,7 @@ import '../styles/shop.scss';
 export default function Shop(props) {
     
     // props:
-    const { addToCart } = props;
+    const { addToCart, cartItems } = props;
 
     // state
     const [items, setItems] = useState([]);
@@ -35,9 +35,14 @@ export default function Shop(props) {
     return (
         <div className='shop-page'>
             {items.map((item, index) => {
+                let inCart = false;
+                if (cartItems.includes(item)) {
+                    inCart = true;
+                }
                 return (
                     <ItemCard
                         handleAddClick={() => addToCart(item)}
+                        inCart={inCart}
                         itemDetails={item}
                         itemId={index}
                         key={uniqid()} 

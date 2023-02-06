@@ -5,15 +5,33 @@ import { Link } from 'react-router-dom';
 export default function ItemCard(props) {
 
     // props:
-    const { 
+    const {
+        handleAddClick,
+        inCart, 
         itemId, 
-        itemDetails,
-        handleAddClick } = props;
+        itemDetails } = props;    
 
     // image render conditions:
     let previewImage;
     if (itemDetails.src) {
         previewImage = <img src={require(`../img/art/${itemDetails.src}`)} alt={itemDetails.title}></img>;
+    }
+
+    // render conditions:
+    let addButton;
+    if (!inCart) {
+        addButton = 
+            <div 
+                className='card-button add-to-cart' 
+                onClick={() => handleAddClick(itemDetails)}
+            >
+                Add to Cart
+            </div>;
+    } else {
+        addButton =
+            <div className='card-button added-to-cart'>
+                Added ✓
+            </div>;
     }
 
     // render:
@@ -34,12 +52,7 @@ export default function ItemCard(props) {
             <div className='card-button view-details'>
                 <Link to={`./${itemId}`}>View Details</Link>
             </div>
-            <div 
-                className='card-button add-to-cart' 
-                onClick={() => handleAddClick(itemDetails)}
-            >
-                Add to Cart
-            </div>
+            {addButton}
         </div>
     )
 }
