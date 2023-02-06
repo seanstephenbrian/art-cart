@@ -1,0 +1,26 @@
+.item-page {
+    padding: calc(0.5*var(--rvv));
+    background-color: var(--content-bg);
+    height: 100vh;
+    color: var(--item-page-text);
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.2*var(--rvv));
+    align-items: center;
+
+    .item-title {
+        font-size: calc(var(--rvv));
+        font-style: italic;
+    }
+
+    .preview-image {
+        max-width: 75vw;
+    }
+
+    .preview-image img {
+        width: 100%;
+        max-width: 750px;
+        outline: 3px solid var(--item-image-outline);
+        border: 3px solid var(--item-image-border);
+    }
+}

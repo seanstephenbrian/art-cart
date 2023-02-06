@@ -7,6 +7,7 @@
     --rvv: calc(1rem + 1vmin + 1vmax);
 
     // sizes:
+    --footer-height: calc(var(--rvv));
     --nav-button-font-size: calc(0.6*var(--rvv));
     --nav-button-height: calc(var(--rvv));
     --subtitle-font-size: calc(0.65*var(--rvv));
@@ -16,14 +17,17 @@
     --added-text: #f9d896;
     --cart-bg: #f9d896;
     --cart-text: #123852;
+    --content-bg: #ffdf9f79;
     --details-bg: #8fb3cc74;
     --details-text: #123852;
     --item-bg: #ffe4ae;
+    --item-image-border: #f0a613;
+    --item-image-outline: #07314e;
+    --item-page-text: #07314e;
     --item-text: #07314b;
     --nav-bg: #ffdf9fa9;
     --nav-button-bg: #8fb3cc74;
     --nav-text: #123852;
-    --shop-bg: #ffdf9f79;
 }
 
 @font-face {
@@ -79,6 +83,11 @@ html {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+        }
+
+        footer {
+            height: var(--footer-height);
+            margin-top: auto;
         }
     }
 }

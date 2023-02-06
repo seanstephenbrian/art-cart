@@ -31,9 +31,31 @@ export default function ItemPage() {
             });
     }
 
+    // image render conditions:
+    let previewImage;
+    if (itemDetails.src) {
+        previewImage = <img src={require(`../img/art/${itemDetails.src}`)} alt={itemDetails.title}></img>;
+    } else {
+        previewImage = '';
+    }
+
     return (
-        <div>
-            {itemDetails.title}, {itemDetails.artist}, {itemDetails.year}, ${itemDetails.price} million
+        <div className='item-page'>
+            <div className='item-title'>
+                {itemDetails.title}
+            </div>
+            <div className='preview-image'>
+                {previewImage}
+            </div>
+            <div className='item-artist'>
+                {itemDetails.artist}
+            </div>
+            <div className='item-year'>
+                {itemDetails.year}
+            </div>
+            <div className='item-price'>
+                ${itemDetails.price} million
+            </div>
         </div>
     )
 }

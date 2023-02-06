@@ -1,6 +1,6 @@
 .shop-page {
     padding-top: calc(0.5*var(--rvv));
-    background-color: var(--shop-bg);
+    background-color: var(--content-bg);
     display: flex;
     justify-content: center;
     gap: calc(0.5*var(--rvv));
@@ -41,8 +41,8 @@
             justify-content: center;
 
             img {
-                border-radius: 5px;
-                border: 2px solid var(--item-text);
+                border: 2px solid var(--item-image-border);
+                outline: 2px solid var(--item-image-outline);
                 height: 100%;
             }
         }
