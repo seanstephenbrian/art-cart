@@ -56,7 +56,7 @@ export default function Cart(props) {
         setCartTax(total * 0.08875);
         // and save cart to local storage:
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    });
+    }, [cartItems]);
 
     // render conditions:
     if (hidden) {
@@ -121,7 +121,9 @@ export default function Cart(props) {
                         ${(cartTotal + cartTax + cartShipping).toLocaleString('en-US')}
                     </div>
                 </div>
-                
+                <div className='checkout'>
+                    <div className='checkout-button' onClick={handleCloseClick} >Check Out</div>
+                </div>
             </div>
         )
     }

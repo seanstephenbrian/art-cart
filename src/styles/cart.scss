@@ -5,6 +5,7 @@
     width: 100vw;
     background-color: var(--cart-bg);
     color: var(--cart-text);
+    overflow: auto;
 
     .cart-heading {
         width: 80%;
@@ -22,7 +23,7 @@
             font-size: calc(0.7*var(--rvv));
             width: 15px;
             height: 15px;
-            padding: 5px;
+            padding: calc(0.2*var(--rvv)) calc(0.15*var(--rvv)) calc(0.15*var(--rvv)) calc(0.165*var(--rvv));
             display: flex;
             justify-content: center;
             align-items: center;
@@ -90,6 +91,7 @@
                 font-size: calc(0.8*var(--rvv));
                 grid-area: cart-item-price;
                 display: flex;
+                justify-content: flex-end;
                 align-items: center;
             }
         }
@@ -147,5 +149,59 @@
         }
     }
 
-    
+    .checkout {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .checkout-button {
+            cursor: pointer;
+            margin: calc(var(--rvv)) 0;
+            font-size: 1.5rem;
+            padding: calc(0.1*var(--rvv));
+            width: 30%;
+            max-width: 150px;
+            height: 40px;
+            border: 2px solid var(--cart-text);
+            border-radius: 5px;
+            background-color: var(--nav-button-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.1s ease-in-out;
+        }
+
+        .checkout-button:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+// desktop:
+@media screen and (min-width: 600px) {
+    .cart {
+        width: 30vw;
+        min-width: 500px;
+        right: 0;
+        margin: calc(0.5*var(--rvv));
+        height: 95vh;
+        border: 2px solid var(--cart-text);
+        border-radius: 10px;
+
+        .cart-items {
+            .cart-item {
+                .cart-item-price {
+                    justify-content: flex-end;
+                }
+            }
+        }
+
+        .checkout {
+            .checkout-button {
+                font-size: 2rem;
+            }
+        }
+        
+    }   
 }
