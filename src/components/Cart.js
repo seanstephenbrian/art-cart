@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import uniqid from 'uniqid';
 
 import CloseIcon from '../img/close.svg';
 
@@ -6,28 +7,11 @@ export default function Cart(props) {
 
     // props:
     const {
-        handleCartUpdate, 
+        cartItems,
         handleCloseClick,
         hidden } = props;
 
     // state:
-    const [cartItems, setCartItems] = useState([
-            {
-                id: 1,
-                title: 'test title',
-                artist: 'test artist',
-                year: 'test year',
-                price: 100000000,
-            },
-            {
-                id: 30,
-                title: 'test title 2',
-                artist: 'test artist 2',
-                year: 'test year 2',
-                price: 50000000,
-            }
-    ]);
-
     const [cartTotal, setCartTotal] = useState(0);
 
     const [cartShipping, setCartShipping] = useState(0);
@@ -35,20 +19,13 @@ export default function Cart(props) {
     const [cartTax, setCartTax] = useState(0);
 
     // HOOKS:
-    // on initial render, check for existing cart in localStorage:
-    useEffect(() => {
-        if (localStorage.getItem('cartItems')) {
-            setCartItems(JSON.parse(localStorage.getItem('cartItems')));
-        }
-    }, []);
-
     // whenever cartItems changes...
     useEffect(() => {
         // update cartTotal:
-        const total = cartItems.reduce((accumulator, currentItem) => accumulator + currentItem.price, 0);
+        const total = cartItems.reduce((accumulator, currentItem) => accumulator + (currentItem.price * 1000000), 0);
         setCartTotal(total);
         // update shipping:
-        if (total >= 100000000) {
+        if (total >= 100000000 || cartItems.length === 0) {
             setCartShipping(0);
         } else {
             setCartShipping(50000);
@@ -57,8 +34,6 @@ export default function Cart(props) {
         setCartTax(total * 0.08875);
         // and save cart to local storage:
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
-        // update currentItemCount in parent component:
-        handleCartUpdate(cartItems.length);
     }, [cartItems]);
 
     // render conditions:
@@ -84,15 +59,15 @@ export default function Cart(props) {
                 <div className='cart-items'>
                     {cartItems.map((item) => {
                         return (
-                            <div className='cart-item' key={item.id}>
+                            <div className='cart-item' key={uniqid()}>
                                 <div className='cart-item-heading'>
-                                    {item.title}
+                                    {item.title} {item.id}
                                 </div>
                                 <div className='cart-item-details'>
                                     {item.artist}, {item.year}
                                 </div>
                                 <div className='cart-item-price'>
-                                    ${item.price.toLocaleString('en-US')}
+                                    ${(item.price * 1000000).toLocaleString('en-US')}
                                 </div>
                             </div>
                         )

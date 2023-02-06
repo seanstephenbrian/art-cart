@@ -5,8 +5,11 @@ import ItemCard from './ItemCard';
 
 import '../styles/shop.scss';
 
-export default function Shop() {
+export default function Shop(props) {
     
+    // props:
+    const { addToCart } = props;
+
     // state
     const [items, setItems] = useState([]);
 
@@ -15,7 +18,6 @@ export default function Shop() {
         getItems();
     }, []);
 
-    // methods:
     async function getItems() {
         fetch('art-data.json',
             {
@@ -35,6 +37,7 @@ export default function Shop() {
             {items.map((item, index) => {
                 return (
                     <ItemCard
+                        handleAddClick={() => addToCart(item)}
                         itemDetails={item}
                         itemId={index}
                         key={uniqid()} 

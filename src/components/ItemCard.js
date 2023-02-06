@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom';
 export default function ItemCard(props) {
 
     // props:
-    const { itemId, itemDetails } = props;
+    const { 
+        itemId, 
+        itemDetails,
+        handleAddClick } = props;
 
     // image render conditions:
     let previewImage;
@@ -28,8 +31,14 @@ export default function ItemCard(props) {
             <div className='item-price'>
                 ${itemDetails.price} million
             </div>
-            <div className='view-details'>
+            <div className='card-button view-details'>
                 <Link to={`./${itemId}`}>View Details</Link>
+            </div>
+            <div 
+                className='card-button add-to-cart' 
+                onClick={() => handleAddClick(itemDetails)}
+            >
+                Add to Cart
             </div>
         </div>
     )
