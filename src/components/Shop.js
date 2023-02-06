@@ -3,6 +3,8 @@ import uniqid from 'uniqid';
 
 import ItemCard from './ItemCard';
 
+import '../styles/shop.scss';
+
 export default function Shop() {
     
     // state
@@ -32,7 +34,11 @@ export default function Shop() {
         <div className='shop-page'>
             {items.map((item, index) => {
                 return (
-                    <ItemCard key={uniqid()} itemId={index} itemDetails={item} />
+                    <ItemCard
+                        itemDetails={item}
+                        itemId={index}
+                        key={uniqid()} 
+                    />
                 )
             })}
         </div>

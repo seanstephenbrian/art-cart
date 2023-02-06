@@ -3,91 +3,106 @@
     "price": 497.8,
     "title": "Salvator Mundi",
     "artist": "Leonardo da Vinci",
-    "year": 1500
+    "year": 1500,
+    "src": "salvator.jpg"
   },
   {
     "price": 343,
     "title": "Interchange",
     "artist": "Willem de Kooning",
-    "year": 1955
+    "year": 1955,
+    "src": "interchange.jpg"
   },
   {
     "price": 301,
     "title": "The Card Players",
     "artist": "Paul Cézanne",
-    "year": 1892
+    "year": 1892,
+    "src": "cardplayers.jpg"
   },
   {
     "price": 240,
     "title": "Nafea Faa Ipoipo\n(When Will You Marry?)",
     "artist": "Paul Gauguin",
-    "year": 1892
+    "year": 1892,
+    "src": "nafea.jpg"
   },
   {
     "price": 229,
     "title": "Number 17A",
     "artist": "Jackson Pollock",
-    "year": 1948
+    "year": 1948,
+    "src": "17a.jpg"
   },
   {
     "price": 213.8,
     "title": "Wasserschlangen II",
     "artist": "Gustav Klimt",
-    "year": 1907
+    "year": 1907,
+    "src": "17a.jpg"
   },
   {
     "price": 213,
     "title": "No. 6 (Violet, Green and Red)",
     "artist": "Mark Rothko",
-    "year": 1951
+    "year": 1951,
+    "src": "17a.jpg"
   },
   {
     "price": 206,
     "title": "Pendant portraits of Maerten Soolmans and Oopjen Coppit",
     "artist": "Rembrandt",
-    "year": 1634
+    "year": 1634,
+    "src": "17a.jpg"
   },
   {
     "price": 205,
     "title": "Les Femmes d'Alger\n(\"Version O\")",
     "artist": "Pablo Picasso",
-    "year": 1955
+    "year": 1955,
+    "src": "17a.jpg"
   },
   {
     "price": 198,
     "title": "The Standard Bearer",
     "artist": "Rembrandt",
-    "year": 1636
+    "year": 1636,
+    "src": "17a.jpg"
   },
   {
     "price": 195,
     "title": "Shot Sage Blue Marilyn",
     "artist": "Andy Warhol",
-    "year": 1964
+    "year": 1964,
+    "src": "17a.jpg"
   },
   {
     "price": 194.8,
     "title": "Nu couché",
     "artist": "Amedeo Modigliani",
-    "year": 1917
+    "year": 1917,
+    "src": "17a.jpg"
   },
   {
     "price": 188.2,
     "title": "No. 5, 1948",
     "artist": "Jackson Pollock",
-    "year": 1948
+    "year": 1948,
+    "src": "17a.jpg"
   },
   {
     "price": 184.8,
     "title": "Woman III",
     "artist": "Willem de Kooning",
-    "year": 1953
+    "year": 1953,
+    "src": "17a.jpg"
   },
   {
     "price": 182.4,
     "title": "Masterpiece",
     "artist": "Roy Lichtenstein",
-    "year": 1962
+    "year": 1962,
+    "src": "17a.jpg"
   },
   {
     "price": 181.5,

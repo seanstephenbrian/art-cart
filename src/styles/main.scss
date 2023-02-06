@@ -12,11 +12,16 @@
     --subtitle-font-size: calc(0.65*var(--rvv));
 
     // colors:
-    --cart-bg: #ffe4ae;
+    --cart-bg: #f9d896;
     --cart-text: #123852;
+    --details-bg: #8fb3cc74;
+    --details-text: #123852;
+    --item-bg: #ffe4ae;
+    --item-text: #07314b;
     --nav-bg: #ffdf9fa9;
     --nav-button-bg: #8fb3cc74;
     --nav-text: #123852;
+    --shop-bg: #ffdf9f79;
 }
 
 @font-face {

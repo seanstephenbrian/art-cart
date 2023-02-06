@@ -1,0 +1,106 @@
+.shop-page {
+    padding-top: calc(0.5*var(--rvv));
+    background-color: var(--shop-bg);
+    display: flex;
+    justify-content: center;
+    gap: calc(0.5*var(--rvv));
+    flex-wrap: wrap;
+
+    .item-card {
+        color: var(--item-text);
+        background-color: var(--item-bg);
+        border: 2.5px solid var(--item-text);
+        border-radius: 5px;
+        width: 175px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .item-title {
+            margin-top: calc(0.3*var(--rvv));
+            font-size: calc(0.7*var(--rvv));
+            text-align: center;
+            font-style: italic;
+
+            a {
+                color: var(--item-text);
+            }
+            a:visited {
+                color: var(--item-text);
+            }
+        }
+
+        .item-details {
+            margin-bottom: calc(0.3*var(--rvv));
+        }
+
+        .item-img-container {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+
+            img {
+                border-radius: 5px;
+                border: 2px solid var(--item-text);
+                height: 100%;
+            }
+        }
+
+        .item-price {
+            font-size: calc(0.7*var(--rvv));
+            margin: calc(0.3*var(--rvv)) 0 calc(0.6*var(--rvv));
+        }
+
+        .view-details {
+            font-size: calc(0.6*var(--rvv));
+            display: flex;
+            justify-content: center;
+            margin: auto 0 calc(0.5*var(--rvv));
+            background-color: var(--details-bg);
+            padding: calc(0.3*var(--rvv));
+            border-radius: 5px;
+            border: 2px solid var(--details-text);
+
+            a {
+                color: var(--item-text);
+            }
+            a:visited {
+                color: var(--item-text);
+            }
+        }
+    }
+}
+
+// desktop:
+@media screen and (min-width: 600px) {
+    .shop-page {
+        padding: calc(0.5*var(--rvv)) calc(var(--rvv)) 0;
+
+        .item-card {
+            min-width: 225px;
+            width: 15vw;
+
+            .item-img-container {
+                height: 15vh;
+            }
+
+            .view-details {
+                transition: transform 0.1s ease-in-out;
+            }
+
+            .view-details:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .shop-page {
+        padding: calc(0.5*var(--rvv)) 20vw 0;
+        
+        
+    }
+}
+
