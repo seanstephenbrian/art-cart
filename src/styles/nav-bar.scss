@@ -60,6 +60,7 @@
     }
     
     .shop-link {
+        margin-left: auto;
         grid-area: shop;
     }
     
@@ -69,8 +70,9 @@
         gap: 5px;
 
         .cart-link-text {
+            display: flex;
+            gap: 5px;
             .cart-icon {
-                margin-left: calc(0.1*var(--rvv));
                 height: calc(0.9*var(--nav-button-height));
             }
         }

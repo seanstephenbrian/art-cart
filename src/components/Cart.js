@@ -5,7 +5,8 @@ import CloseIcon from '../img/close.svg';
 export default function Cart(props) {
 
     // props:
-    const { 
+    const {
+        handleCartUpdate, 
         handleCloseClick,
         hidden } = props;
 
@@ -56,6 +57,8 @@ export default function Cart(props) {
         setCartTax(total * 0.08875);
         // and save cart to local storage:
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        // update currentItemCount in parent component:
+        handleCartUpdate(cartItems.length);
     }, [cartItems]);
 
     // render conditions:

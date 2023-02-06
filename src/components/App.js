@@ -17,6 +17,7 @@ export default function App() {
     
     // state:
     const [cartHidden, setCartHidden] = useState(true);
+    const [currentItemCount, setCurrentItemCount] = useState(0);
 
     // methods:
     function toggleCart() {
@@ -25,12 +26,20 @@ export default function App() {
         });
     }
 
+    function updateItemCount(newCount) {
+        setCurrentItemCount(newCount);
+    }
+
     // render:
     return (
         <BrowserRouter>
             <div className='page-wrapper'>
-                <NavBar handleCartClick={toggleCart} />
-                <Cart handleCloseClick={toggleCart} hidden={cartHidden} />
+                <NavBar handleCartClick={toggleCart} itemCount={currentItemCount} />
+                <Cart 
+                    handleCartUpdate={updateItemCount}
+                    handleCloseClick={toggleCart}
+                    hidden={cartHidden} 
+                />
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/shop' element={<Shop />} />
