@@ -20,6 +20,9 @@
     --content-bg: #ffdf9f79;
     --details-bg: #8fb3cc74;
     --details-text: #123852;
+    --hero-caption: #ffce6dcb;
+    --hero-caption-bg: #1238526d;
+    --home-text: #07304e;
     --item-bg: #ffe4ae;
     --item-image-border: #f0a613;
     --item-image-outline: #07314e;
@@ -86,8 +89,13 @@ html {
         }
 
         footer {
-            height: var(--footer-height);
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--content-bg);
+            min-height: var(--footer-height);
             margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

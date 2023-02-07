@@ -1,6 +1,100 @@
 .home-page {
     background-color: var(--content-bg);
-    height: 100vh;
+    color: var(--home-text);
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
+    gap: calc(0.5*var(--rvv));
+
+    .hero {
+        position: relative;
+        width: 100vw;
+        height: 30vh;
+        background-image: url('../img/hero.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .welcome-message {
+            padding: calc(0.7*var(--rvv)) 0 0 calc(0.7*var(--rvv));
+            font-size: calc(1.3*var(--rvv));
+        }
+
+        .hero-caption {
+            color: var(--hero-caption);
+            background-color: var(--hero-caption-bg);
+            text-align: end;
+            padding: 5px;
+            padding-right: calc(0.5*var(--rvv));
+            border-radius: 10px 0 0 0;
+            font-size: calc(0.45*var(--rvv));
+            width: 65%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            a,
+            a:visited {
+                color: var(--hero-caption);
+            }
+        }
+    }
+
+    .mission-statement {
+        padding: calc(0.3*var(--rvv)) calc(0.7*var(--rvv)) 0;
+        font-size: calc(0.7*var(--rvv));
+        margin-bottom: calc(0.3*var(--rvv));
+    }
+
+    .home-text {
+        padding: 0 calc(0.7*var(--rvv));
+        font-size: calc(0.6*var(--rvv));
+    }
+
+    .home-button {
+        margin-top: calc(0.6*var(--rvv));
+        align-self: center;
+        cursor: pointer;
+        font-size: calc(0.9*var(--rvv));
+        display: flex;
+        justify-content: center;
+        background-color: var(--details-bg);
+        padding: calc(0.3*var(--rvv));
+        border-radius: 5px;
+        border: 2px solid var(--details-text);
+
+        a,
+        a:visited {
+            color: var(--item-text);
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .home-page {
+
+        .hero {
+    
+            .hero-caption {
+                width: fit-content;
+            }
+
+        }
+
+        .mission-statement {
+            padding: calc(0.3*var(--rvv)) 15vw 0;
+        }
+
+        .home-text {
+            padding: 0 15vw;
+        }
+
+        .home-button {
+            transition: transform 0.1s ease-in-out;
+        }
+
+        .home-button:hover {
+            transform: scale(1.05);
+        }
+    }
 }

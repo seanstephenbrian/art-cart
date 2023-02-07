@@ -1,19 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../styles/home-page.scss';
 
 export default function Home() {
     return (
         <div className='home-page'>
-            <div className='welcome-message'>
-                Welcome to ArtCart.
+            <div className='hero'>
+                <div className='welcome-message'>
+                    Welcome to ArtCart.
+                </div>
+                <div className='hero-caption'>
+                    <Link to='/shop/52'>A Wheatfield with Cypresses, Vincent van Gogh, 1889, oil on canvas.</Link>
+                </div>
             </div>
             <div className='mission-statement'>
-                At ArtCart, we passionately believe that the world's most expensive art
-                should be accessible to anyone with an Internet connection.
+                We passionately believe that anyone with an Internet connection should
+                be able to buy the world's most expensive art.
             </div>
             <div className='home-text'>
-                We invite you to peruse our collection of the 115 most expensive works in
+                On this site, you will find our collection of the 115 most expensive works in
                 the history of art.
             </div>
             <div className='home-text'>
@@ -26,10 +32,10 @@ export default function Home() {
                 over $200,000,000!
             </div>
             <div className='home-text'>
-                We thank you for your patronage. Click below to start shopping!
+                Thank you for your patronage. Click below to start shopping!
             </div>
             <div className='home-button'>
-                Shop Now
+                <Link to='/shop'>Shop Now</Link>
             </div>
         </div>
     )

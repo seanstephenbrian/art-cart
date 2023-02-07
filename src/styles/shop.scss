@@ -65,15 +65,13 @@
             border-radius: 5px;
             border: 2px solid var(--details-text);
 
-            a {
-                color: var(--item-text);
-            }
+            a,
             a:visited {
                 color: var(--item-text);
             }
         }
 
-        .added-to-cart {
+        .remove-from-cart {
             background-color: var(--added-bg);
             border: 1px solid var(--added-text);
             outline: 2px solid var(--added-bg);
@@ -99,13 +97,11 @@
                 }
             }
 
-            .add-to-cart,
-            .view-details {
+            .card-button {
                 transition: transform 0.1s ease-in-out;
             }
 
-            .add-to-cart:hover,
-            .view-details:hover {
+            .card-button:hover {
                 transform: scale(1.05);
             }
         }

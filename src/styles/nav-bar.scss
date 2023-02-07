@@ -1,9 +1,12 @@
 .nav-bar {
+    position: sticky;
+    z-index: 1;
+    top: 0;
     width: 100vw;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-areas: "title shop cart";
-    padding: 10px 0;
+    padding-bottom: calc(0.4*var(--rvv));
     border-bottom: 2.5px solid var(--nav-text);
     background-color: var(--nav-bg);
 

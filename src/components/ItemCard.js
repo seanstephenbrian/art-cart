@@ -24,7 +24,7 @@ export default function ItemCard(props) {
     if (cartItems.some(cartItem => cartItem.title === itemDetails.title)) {
         addButton =
             <div 
-                className='card-button added-to-cart'
+                className='card-button remove-from-cart'
                 onClick={() => handleRemoveClick(itemDetails)}
             >
                 Remove from Cart
