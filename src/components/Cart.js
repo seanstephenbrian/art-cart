@@ -9,6 +9,7 @@ export default function Cart(props) {
     const {
         cartItems,
         handleCloseClick,
+        handleRemoveClick,
         hidden } = props;
 
     // state:
@@ -64,6 +65,9 @@ export default function Cart(props) {
                                 </div>
                                 <div className='cart-item-price'>
                                     ${(item.price * 1000000).toLocaleString('en-US')}
+                                </div>
+                                <div className='remove-item' onClick={() => handleRemoveClick(item)}>
+                                    Remove Item
                                 </div>
                             </div>
                         )

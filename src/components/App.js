@@ -48,6 +48,9 @@ export default function App() {
                 <Cart
                     cartItems={cartItems}
                     handleCloseClick={toggleCart}
+                    handleRemoveClick={(item) => {
+                        updateCart(item, 'remove');
+                    }}
                     hidden={cartHidden} 
                 />
                 <Routes>
