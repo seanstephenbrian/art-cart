@@ -8,6 +8,7 @@ export default function ItemCard(props) {
     const {
         cartItems,
         handleAddClick,
+        handleRemoveClick,
         itemId, 
         itemDetails } = props;    
 
@@ -22,8 +23,11 @@ export default function ItemCard(props) {
     // render 'Added' button if the item is already in the cart:
     if (cartItems.some(cartItem => cartItem.title === itemDetails.title)) {
         addButton =
-            <div className='card-button added-to-cart'>
-                Added ✓
+            <div 
+                className='card-button added-to-cart'
+                onClick={() => handleRemoveClick(itemDetails)}
+            >
+                Remove from Cart
             </div>;
     // otherwise render 'Add to Cart' button:
     } else {

@@ -23,7 +23,7 @@
             font-size: calc(0.7*var(--rvv));
             width: 15px;
             height: 15px;
-            padding: calc(0.2*var(--rvv)) calc(0.15*var(--rvv)) calc(0.15*var(--rvv)) calc(0.165*var(--rvv));
+            padding: 8px 8px 6px 5px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -186,7 +186,7 @@
         right: 0;
         margin: calc(0.5*var(--rvv));
         height: 95vh;
-        border: 2px solid var(--cart-text);
+        border: 3px solid var(--cart-text);
         border-radius: 10px;
 
         .cart-items {

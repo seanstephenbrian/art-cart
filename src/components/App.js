@@ -20,13 +20,18 @@ export default function App() {
     const [cartItems, setCartItems] = useState([]);
 
     // methods:
-    function updateCart(item) {
-        // if item is already in cart, don't let user add it:
-        if (cartItems.some(cartItem => cartItem.title === item.title)) {
-            return;
+    function updateCart(item, action) {
+        if (action === 'add') {
+            // if item is already in cart, don't let user add it:
+            if (cartItems.some(cartItem => cartItem.title === item.title)) {
+                return;
+            }
+            // if item's not there, add it to cart:
+            setCartItems([...cartItems, item]);
+        } else if (action === 'remove') {
+            console.log('removing...');
+            console.log(item);
         }
-        // if item's not there, add it to cart:
-        setCartItems([...cartItems, item]);
     }
 
     function toggleCart() {
@@ -47,8 +52,34 @@ export default function App() {
                 />
                 <Routes>
                     <Route path='/' element={<Home />} />
-                    <Route path='/shop' element={<Shop addToCart={updateCart} cartItems={cartItems} />} />
-                    <Route path='/shop/:itemId' element={<ItemPage />} />
+                    <Route 
+                        path='/shop' 
+                        element={
+                            <Shop 
+                                addToCart={(item) => {
+                                    updateCart(item, 'add');
+                                }} 
+                                cartItems={cartItems} 
+                                removeFromCart={(item) => {
+                                    updateCart(item, 'remove');
+                                }}
+                            />
+                        } 
+                    />
+                    <Route 
+                        path='/shop/:itemId' 
+                        element={
+                            <ItemPage 
+                                addToCart={(item) => {
+                                    updateCart(item, 'add');
+                                }}
+                                cartItems={cartItems}
+                                removeFromCart={(item) => {
+                                    updateCart(item, 'remove');
+                                }}
+                            />
+                        } 
+                    />
                 </Routes>
                 <Footer />
             </div>

@@ -8,7 +8,7 @@ import '../styles/shop.scss';
 export default function Shop(props) {
     
     // props:
-    const { addToCart, cartItems } = props;
+    const { addToCart, cartItems, removeFromCart } = props;
 
     // state
     const [items, setItems] = useState([]);
@@ -38,6 +38,7 @@ export default function Shop(props) {
                     <ItemCard
                         cartItems={cartItems}
                         handleAddClick={() => addToCart(item)}
+                        handleRemoveClick={() => removeFromCart(item)}
                         itemDetails={item}
                         itemId={index}
                         key={uniqid()} 

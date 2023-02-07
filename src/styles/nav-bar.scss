@@ -34,6 +34,7 @@
         align-items: flex-end;
 
         .link-text {
+            text-align: center;
             height: var(--nav-button-height);
             text-decoration: none;
             border: 2px solid var(--nav-text);
@@ -42,7 +43,7 @@
             font-family: 'Leluja';
             font-size: var(--nav-button-font-size);
             margin-top: auto;
-            padding: 2px 6px;
+            padding: 6px;
             background-color: var(--nav-button-bg);
             color: var(--nav-text);
             
