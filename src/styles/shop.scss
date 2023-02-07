@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+    0% { 
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1;
+    }
+}
+
 .shop-page {
     padding-top: calc(0.5*var(--rvv));
     background-color: var(--content-bg);

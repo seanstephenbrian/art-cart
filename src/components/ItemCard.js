@@ -10,7 +10,7 @@ export default function ItemCard(props) {
         handleAddClick,
         handleRemoveClick,
         itemId, 
-        itemDetails } = props;    
+        itemDetails } = props;
 
     // image render conditions:
     let previewImage;
@@ -18,9 +18,9 @@ export default function ItemCard(props) {
         previewImage = <img src={require(`../img/art/${itemDetails.src}`)} alt={itemDetails.title}></img>;
     }
 
-    // render conditions:
+    // add button render conditions:
     let addButton;
-    // render 'Added' button if the item is already in the cart:
+    // render 'Remove from Cart' button if the item is already in the cart:
     if (cartItems.some(cartItem => cartItem.title === itemDetails.title)) {
         addButton =
             <div 
@@ -41,24 +41,24 @@ export default function ItemCard(props) {
     }
 
     // render:
-    return (
-        <div className='item-card'>
-            <div className='item-title'>
-                <Link to={`./${itemId}`}>{itemDetails.title}</Link>
+        return (
+            <div className='item-card'>
+                <div className='item-title'>
+                    <Link to={`./${itemId}`}>{itemDetails.title}</Link>
+                </div>
+                <div className='item-details'>
+                    {itemDetails.artist}, {itemDetails.year}
+                </div>
+                <div className='item-img-container'>
+                    {previewImage}
+                </div>
+                <div className='item-price'>
+                    ${itemDetails.price} million
+                </div>
+                <div className='card-button view-details'>
+                    <Link to={`./${itemId}`}>View Details</Link>
+                </div>
+                {addButton}
             </div>
-            <div className='item-details'>
-                {itemDetails.artist}, {itemDetails.year}
-            </div>
-            <div className='item-img-container'>
-                {previewImage}
-            </div>
-            <div className='item-price'>
-                ${itemDetails.price} million
-            </div>
-            <div className='card-button view-details'>
-                <Link to={`./${itemId}`}>View Details</Link>
-            </div>
-            {addButton}
-        </div>
-    )
+        )
 }

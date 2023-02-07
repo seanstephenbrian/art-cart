@@ -31,6 +31,7 @@ export default function Shop(props) {
             });
     }
 
+ 
     return (
         <div className='shop-page'>
             {items.map((item, index) => {

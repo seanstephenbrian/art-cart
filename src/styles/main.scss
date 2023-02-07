@@ -89,6 +89,7 @@ html {
         }
 
         footer {
+            padding-top: calc(var(--rvv));
             font-family: 'Courier New', Courier, monospace;
             background-color: var(--content-bg);
             min-height: var(--footer-height);
