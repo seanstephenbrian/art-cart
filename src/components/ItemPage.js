@@ -48,7 +48,7 @@ export default function ItemPage(props) {
     if (cartItems.some(cartItem => cartItem.title === itemDetails.title)) {
         addButton =
             <div 
-                className='added-to-cart item-page-button'
+                className='remove-from-cart item-page-button'
                 onClick={() => removeFromCart(itemDetails)}
             >
                 Remove from Cart

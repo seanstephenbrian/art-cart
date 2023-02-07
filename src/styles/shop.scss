@@ -55,6 +55,7 @@
         }
 
         .card-button {
+            cursor: pointer;
             font-size: calc(0.6*var(--rvv));
             display: flex;
             justify-content: center;
@@ -70,10 +71,6 @@
             a:visited {
                 color: var(--item-text);
             }
-        }
-
-        .add-to-cart {
-            cursor: pointer;
         }
 
         .added-to-cart {

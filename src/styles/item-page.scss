@@ -67,9 +67,9 @@
     }
 
     .add-to-cart,
-    .added-to-cart {
+    .remove-from-cart {
         margin-top: calc(var(--rvv));
-        font-size: calc(1.1*var(--rvv));
+        font-size: calc(0.9*var(--rvv));
         padding: 8px;
         align-self: center;
         width: fit-content;
@@ -77,9 +77,8 @@
 
     }
 
-    .added-to-cart {
+    .remove-from-cart {
         padding: 8px 10px;
-        cursor: default;
         background-color: var(--added-bg);
         border: 1px solid var(--added-text);
         outline: 2px solid var(--added-bg);

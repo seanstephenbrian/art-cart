@@ -29,8 +29,8 @@ export default function App() {
             // if item's not there, add it to cart:
             setCartItems([...cartItems, item]);
         } else if (action === 'remove') {
-            console.log('removing...');
-            console.log(item);
+            let updatedCartItems = cartItems.filter(cartItem => cartItem !== item);
+            setCartItems(updatedCartItems);
         }
     }
 
