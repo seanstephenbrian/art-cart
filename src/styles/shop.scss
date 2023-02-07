@@ -18,6 +18,7 @@
         align-items: center;
 
         .item-title {
+            padding: 5px;
             margin-top: calc(0.3*var(--rvv));
             font-size: calc(0.7*var(--rvv));
             text-align: center;
@@ -37,6 +38,7 @@
 
         .item-img-container {
             height: 100px;
+            max-width: 90%;
             display: flex;
             justify-content: center;
 
@@ -94,6 +96,10 @@
 
             .item-img-container {
                 height: 15vh;
+
+                img {
+                    max-height: 95%;
+                }
             }
 
             .add-to-cart,

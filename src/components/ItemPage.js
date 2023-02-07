@@ -14,6 +14,7 @@ export default function ItemPage() {
     // on initial render:
     useEffect(() => {
         getItemDetails();
+        window.scrollTo(0, 0);
     }, []);
 
     // methods:
@@ -41,20 +42,28 @@ export default function ItemPage() {
 
     return (
         <div className='item-page'>
-            <div className='item-title'>
-                {itemDetails.title}
+            <div className='return-to-shop button'>
+                Return to Shop
             </div>
-            <div className='preview-image'>
-                {previewImage}
+            <div className='item-details'>
+                <div className='item-title'>
+                    {itemDetails.title}
+                </div>
+                <div className='preview-image'>
+                    {previewImage}
+                </div>
+                <div className='item-artist'>
+                    {itemDetails.artist}
+                </div>
+                <div className='item-year'>
+                    {itemDetails.year}
+                </div>
+                <div className='item-price'>
+                    ${itemDetails.price} million
+                </div>
             </div>
-            <div className='item-artist'>
-                {itemDetails.artist}
-            </div>
-            <div className='item-year'>
-                {itemDetails.year}
-            </div>
-            <div className='item-price'>
-                ${itemDetails.price} million
+            <div className='add-to-cart button'>
+                Add to Cart
             </div>
         </div>
     )

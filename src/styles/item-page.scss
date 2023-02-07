@@ -1,26 +1,50 @@
 .item-page {
-    padding: calc(0.5*var(--rvv));
     background-color: var(--content-bg);
     height: 100vh;
-    color: var(--item-page-text);
     display: flex;
     flex-direction: column;
-    gap: calc(0.2*var(--rvv));
-    align-items: center;
 
-    .item-title {
-        font-size: calc(var(--rvv));
-        font-style: italic;
+    .item-details {
+        padding: calc(0.5*var(--rvv));
+        color: var(--item-page-text);
+        display: flex;
+        flex-direction: column;
+        gap: calc(0.2*var(--rvv));
+        align-items: center;
+
+
+        .item-title {
+            font-size: calc(var(--rvv));
+            font-style: italic;
+        }
+
+        .preview-image {
+            max-width: 75vw;
+
+            img {
+                width: 100%;
+                max-width: 750px;
+                outline: 3px solid var(--item-image-outline);
+                border: 3px solid var(--item-image-border);
+            }
+        }
+
+        .item-artist {
+            font-size: calc(0.8*var(--rvv));
+        }
+
+        .item-year {
+            font-size: calc(0.7*var(--rvv));
+        }
+
+        .item-price {
+            font-size: calc(0.9*var(--rvv));
+        }
+
     }
 
-    .preview-image {
-        max-width: 75vw;
+    .add-to-cart {
+        align-self: center;
     }
-
-    .preview-image img {
-        width: 100%;
-        max-width: 750px;
-        outline: 3px solid var(--item-image-outline);
-        border: 3px solid var(--item-image-border);
-    }
+    
 }
