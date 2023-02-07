@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-areas: "title shop cart";
-    padding-bottom: 15px;
+    padding: 10px 0;
     border-bottom: 2.5px solid var(--nav-text);
     background-color: var(--nav-bg);
 
