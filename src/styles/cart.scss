@@ -8,7 +8,7 @@
     overflow: auto;
 
     .cart-heading {
-        width: 80%;
+        width: 100%;
         padding: calc(var(--rvv));
         padding-bottom: calc(0.2*var(--rvv));
         display: flex;
@@ -35,6 +35,7 @@
         .close-cart {
             cursor: pointer;
             margin-left: auto;
+            margin-right: calc(2*var(--rvv));
             border: 2px solid var(--cart-text);
             border-radius: 5px;
             background-color: var(--nav-button-bg);
@@ -94,6 +95,8 @@
 
             .cart-item-price {
                 width: fit-content;
+                height: fit-content;
+                margin-top: auto;
                 margin-left: auto;
                 font-size: calc(0.8*var(--rvv));
                 grid-area: cart-item-price;
