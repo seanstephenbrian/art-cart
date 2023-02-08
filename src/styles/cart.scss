@@ -58,6 +58,7 @@
     }
 
     .shipping-notice {
+        font-size: calc(0.55*var(--rvv));
         padding: 0 calc(var(--rvv)) calc(0.3*var(--rvv));
         font-style: italic;
     }
@@ -71,11 +72,11 @@
             margin: calc(var(--rvv)) 0;
             border-bottom: 2px solid var(--cart-text);
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: calc(0.4*var(--rvv));
             grid-template-areas:
-                "cart-item-heading cart-item-price"
-                "cart-item-details cart-item-price"
-                ". remove-item";
+                "cart-item-heading remove-item"
+                "cart-item-details cart-item-price";
 
             .cart-item-heading {
                 font-size: calc(0.8*var(--rvv));
@@ -86,33 +87,40 @@
 
             .cart-item-details {
                 font-size: calc(0.6*var(--rvv));
-                font-style: italic;
                 grid-area: cart-item-details;
                 display: flex;
-                align-items: flex-end;
+                align-items: flex-start;
             }
 
             .cart-item-price {
+                width: fit-content;
+                margin-left: auto;
                 font-size: calc(0.8*var(--rvv));
                 grid-area: cart-item-price;
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
+                border: 1.5px solid var(--cart-text);
+                border-bottom: none;
+                border-radius: 5px 5px 0 0;
+                padding: 4px;
+                background-color: var(--item-price-bg);
             }
 
             .remove-item {
+                color: var(--remove-item-text);
                 cursor: pointer;
                 font-size: calc(0.5*var(--rvv));
                 grid-area: remove-item;
                 width: fit-content;
                 display: flex;
+                height: fit-content;
                 margin-left: auto;
-                margin-top: calc(0.4*var(--rvv));
-                border: 1.5px solid var(--cart-text);
-                border-bottom: none;
-                border-radius: 5px 5px 0 0;
-                padding: 3px 3px 0;
-                background-color: var(--nav-button-bg);
+                border: 1.5px solid var(--remove-item-text);
+                outline: 1.5px solid var(--remove-item-bg);
+                border-radius: 5px;
+                padding: 4px;
+                background-color: var(--remove-item-bg);
             }
         }
     }

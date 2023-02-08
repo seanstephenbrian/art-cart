@@ -24,12 +24,11 @@ export default function Home() {
             </div>
             <div className='home-text'>
                 From awe-inspiring Renaissance masterworks to Abstract Expressionist canvasses of towering importance,
-                ArtCart's catalog spans a world-class range of styles, time periods, and subjects.
+                ArtCart's catalog spans a world-class range of styles, time periods, and subject matter.
             </div>
             <div className='home-text'>
-                If you find a piece that speaks to you, owning it is as simple as adding it to your ArtCart
-                and checking out. We are pleased to offer free shipping within the continental U.S. on any orders
-                over $200,000,000!
+                If you find a piece that speaks to you, owning it is as simple as adding it to your ArtCart. 
+                We are pleased to offer free shipping within the continental U.S. on any orders over $200,000,000!
             </div>
             <div className='home-text'>
                 Thank you for your patronage. Click below to start shopping!
