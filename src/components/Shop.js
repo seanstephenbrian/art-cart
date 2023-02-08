@@ -50,16 +50,12 @@ export default function Shop(props) {
                 setFilteredItems(currentItems);
             });
     }
-
-    function updateSearchTerm(newInputValue) {
-        setSearchTerm(newInputValue);
-    }
  
     return (
         <div className='shop-page'>
             <SearchBar 
                 inputValue={searchTerm} 
-                updateInputValue={updateSearchTerm}
+                updateInputValue={setSearchTerm}
             />
             <div className='item-cards'>
                 {filteredItems.map((item, index) => {
