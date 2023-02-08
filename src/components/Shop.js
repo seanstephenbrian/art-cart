@@ -58,13 +58,14 @@ export default function Shop(props) {
                 updateInputValue={setSearchTerm}
             />
             <div className='item-cards'>
-                {filteredItems.map((item, index) => {
+                {filteredItems.map((filteredItem) => {
+                    const index = items.findIndex((item) => item.title === filteredItem.title);
                     return (
                         <ItemCard
                             cartItems={cartItems}
-                            handleAddClick={() => addToCart(item)}
-                            handleRemoveClick={() => removeFromCart(item)}
-                            itemDetails={item}
+                            handleAddClick={() => addToCart(filteredItem)}
+                            handleRemoveClick={() => removeFromCart(filteredItem)}
+                            itemDetails={filteredItem}
                             itemId={index}
                             key={uniqid()} 
                         />
