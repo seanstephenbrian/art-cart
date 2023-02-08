@@ -14,11 +14,14 @@ export default function Shop(props) {
     // state
     const [items, setItems] = useState([]);
     const [filteredItems, setFilteredItems] = useState([]);
+    const [searchTerm, setSearchTerm] = useState('test');
 
+    // hooks:
     useEffect(() => {
         getItems();
     }, []);
 
+    // methods:
     async function getItems() {
         fetch('art-data.json',
             {
@@ -33,10 +36,17 @@ export default function Shop(props) {
             });
     }
 
+    function updateSearchTerm(newInputValue) {
+        setSearchTerm(newInputValue);
+    }
+
  
     return (
         <div className='shop-page'>
-            <SearchBar />
+            <SearchBar 
+                inputValue={searchTerm} 
+                updateInputValue={updateSearchTerm}
+            />
             <div className='item-cards'>
                 {items.map((item, index) => {
                     return (
