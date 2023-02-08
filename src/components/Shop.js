@@ -14,12 +14,26 @@ export default function Shop(props) {
     // state
     const [items, setItems] = useState([]);
     const [filteredItems, setFilteredItems] = useState([]);
-    const [searchTerm, setSearchTerm] = useState('test');
+    const [searchTerm, setSearchTerm] = useState('');
 
     // hooks:
     useEffect(() => {
         getItems();
     }, []);
+
+    useEffect(() => {
+        const searchResults = items.filter((item) => {
+            if (
+                item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                item.artist.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                String(item.year).includes(searchTerm)) {
+                return item;
+            } else {
+                return null;
+            }
+        });
+        setFilteredItems(searchResults);
+    }, [items, searchTerm]);
 
     // methods:
     async function getItems() {
@@ -33,13 +47,13 @@ export default function Shop(props) {
             .then((data) => data.json())
             .then((currentItems) => {
                 setItems(currentItems);
+                setFilteredItems(currentItems);
             });
     }
 
     function updateSearchTerm(newInputValue) {
         setSearchTerm(newInputValue);
     }
-
  
     return (
         <div className='shop-page'>
@@ -48,7 +62,7 @@ export default function Shop(props) {
                 updateInputValue={updateSearchTerm}
             />
             <div className='item-cards'>
-                {items.map((item, index) => {
+                {filteredItems.map((item, index) => {
                     return (
                         <ItemCard
                             cartItems={cartItems}

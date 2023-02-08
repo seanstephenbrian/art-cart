@@ -9,6 +9,10 @@
 
 .shop-page {
     background-color: var(--content-bg);
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
 
     .item-cards {
         padding-top: calc(0.5*var(--rvv));
