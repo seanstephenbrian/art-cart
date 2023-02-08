@@ -17,6 +17,7 @@ export default function SearchBar(props) {
             <input
                 onChange={(e) => updateInputValue(e.target.value)} 
                 placeholder='Search by title, artist, or year.'
+                role='searchbox'
                 type='text' 
                 value={inputValue}
             >
