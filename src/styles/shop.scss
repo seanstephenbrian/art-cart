@@ -28,7 +28,7 @@
             height: 70%;
 
             img {
-                filter: invert(17%) sepia(10%) saturate(2853%) hue-rotate(315deg) brightness(88%) contrast(83%);
+                filter: invert(20%) sepia(5%) saturate(3927%) hue-rotate(315deg) brightness(94%) contrast(94%);
                 height: 100%;
             }
         }
@@ -38,11 +38,13 @@
             font-size: calc(0.7*var(--rvv));
             text-align: center;
             font-family: 'Leluja';
-            border: none;
+            border: 1.5px solid var(--search-text);
+            outline: 2px solid var(--search-bg);
             border-radius: 6px;
             padding: 5px;
             background-color: var(--search-bg);
             width: 70vw;
+            transition: background-color 0.15s ease-in-out;
         }
 
         input::placeholder {
@@ -58,7 +60,8 @@
         }
 
         input:focus {
-            outline: none;
+            background-color: var(--search-focus);
+            outline: 2px solid var(--search-focus);
         }
     }
 

@@ -66,9 +66,9 @@ export default function ItemPage(props) {
 
     return (
         <div className='item-page'>
-            <div className='return-to-shop item-page-button'>
-                <Link to='/shop'>Return to Shop</Link>
-            </div>
+            <Link to='/shop' className='return-to-shop item-page-button'>
+                Return to Shop
+            </Link>
             <div className='item-details'>
                 <div className='item-title'>
                     {itemDetails.title}

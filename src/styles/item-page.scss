@@ -6,19 +6,17 @@
     flex-direction: column;
 
     .item-page-button {
+        color: var(--item-page-text);
         cursor: pointer;
         display: flex;
         justify-content: center;
         background-color: var(--details-bg);
         border-radius: 5px;
         border: 2px solid var(--details-text);
+    }
 
-        a {
-            color: var(--item-page-text);
-        }
-        a:visited {
-            color: var(--item-page-text);
-        }
+    .item-page-button:visited {
+        color: var(--item-page-text);
     }
 
     .return-to-shop {

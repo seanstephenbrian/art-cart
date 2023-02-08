@@ -52,6 +52,7 @@
     }
 
     .home-button {
+        color: var(--item-text);
         margin-top: calc(0.6*var(--rvv));
         align-self: center;
         cursor: pointer;
@@ -62,11 +63,10 @@
         padding: calc(0.3*var(--rvv));
         border-radius: 5px;
         border: 2px solid var(--details-text);
+    }
 
-        a,
-        a:visited {
-            color: var(--item-text);
-        }
+    .home-button:visited {
+        color: var(--item-text);
     }
 }
 
