@@ -55,9 +55,9 @@ export default function ItemCard(props) {
                 <div className='item-price'>
                     ${itemDetails.price} million
                 </div>
-                <div className='card-button view-details'>
-                    <Link to={`./${itemId}`}>View Details</Link>
-                </div>
+                <Link to={`./${itemId}`} className='card-button view-details'>
+                    View Details
+                </Link>
                 {addButton}
             </div>
         )

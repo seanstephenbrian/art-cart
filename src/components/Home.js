@@ -34,9 +34,9 @@ export default function Home() {
             <div className='home-text'>
                 Thank you for your patronage. Click below to start shopping!
             </div>
-            <div className='home-button'>
-                <Link to='/shop'>Shop Now</Link>
-            </div>
+            <Link to='/shop' className='home-button'>
+                Shop Now
+            </Link>
         </div>
     )
 }

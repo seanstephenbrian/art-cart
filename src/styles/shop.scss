@@ -64,6 +64,7 @@
         }
 
         .card-button {
+            color: var(--item-text);
             cursor: pointer;
             font-size: calc(0.6*var(--rvv));
             display: flex;
@@ -73,11 +74,10 @@
             padding: calc(0.3*var(--rvv));
             border-radius: 5px;
             border: 2px solid var(--details-text);
+        }
 
-            a,
-            a:visited {
-                color: var(--item-text);
-            }
+        .card-button:visited {
+            color: var(--item-text);
         }
 
         .remove-from-cart {

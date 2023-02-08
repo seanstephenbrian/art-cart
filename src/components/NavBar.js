@@ -14,9 +14,9 @@ export default function NavBar(props) {
     return (
         <div className='nav-bar'>
             <Title />
-            <div className='nav-link shop-link'>
-                <span className='link-text shop-link-text'><Link to='/shop'>Shop Art</Link></span>
-            </div>
+            <Link className='nav-link shop-link' to='/shop'>
+                <span className='link-text shop-link-text'>Shop Art</span>
+            </Link>
             <div className='nav-link cart-link' onClick={handleCartClick}>
                 <div className='link-text cart-link-text'>
                     <img className='cart-icon svg-filter' src={CartIcon} alt='Your Cart' />

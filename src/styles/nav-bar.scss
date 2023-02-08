@@ -48,18 +48,10 @@
             margin-top: auto;
             padding: 6px;
             background-color: var(--nav-button-bg);
-            color: var(--nav-text);
-            
+            color: var(--nav-text);  
             display: flex;
             justify-content: center;
             align-items: center;
-
-            a {
-                color: var(--nav-text);
-            }
-            a:visited {
-                color: var(--nav-text);
-            }
         }
     }
     
