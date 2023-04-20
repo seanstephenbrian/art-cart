@@ -15,12 +15,6 @@ export default function ItemPage(props) {
 
     // on initial render:
     useEffect(() => {
-        getItemDetails();
-        window.scrollTo(0, 0);
-    }, []);
-
-    // methods:
-    async function getItemDetails() {
         fetch('../art-data.json',
             {
                 headers: { 
@@ -32,7 +26,23 @@ export default function ItemPage(props) {
             .then((currentItems) => {
                 setItemDetails(currentItems[itemId]);
             });
-    }
+        window.scrollTo(0, 0);
+    }, [itemId]);
+
+    // methods:
+    // async function getItemDetails() {
+    //     fetch('../art-data.json',
+    //         {
+    //             headers: { 
+    //                 'Content-Type': 'application/json',
+    //                 'Accept': 'application/json'
+    //             }
+    //         })
+    //         .then((data) => data.json())
+    //         .then((currentItems) => {
+    //             setItemDetails(currentItems[itemId]);
+    //         });
+    // }
 
     // image render conditions:
     let previewImage;
